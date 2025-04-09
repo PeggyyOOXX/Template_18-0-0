@@ -47,3 +47,11 @@ scrollControls.forEach(control => {
     });
     container.addEventListener('scroll', updateButtonStates);   // 監聽滾動
 });
+
+//favoritesicon點擊添加/移除active
+const favoriteIcons = document.querySelectorAll('.favoritesicon');
+favoriteIcons.forEach(icon => {
+    icon.addEventListener('click', () => {
+        icon.classList.toggle('active');
+    });
+});
