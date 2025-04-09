@@ -507,9 +507,9 @@ img {width: 100%;}
         width: 100px;
     }
     .gameplay-overlay {
-        width: 100px;
-        height: 125px;
-        border-radius: 5px;
+        width: 0;
+        height: 0;
+        visibility: hidden;
     }
     .footer .payment-logo, .footer .Licenses-logo{
         height: 16px;
