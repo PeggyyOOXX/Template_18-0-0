@@ -374,6 +374,11 @@ img {width: 100%;}
     font-size: 24px;
     font-weight: 700;
 }
+.gameblockBox .btn-secondary-border{
+    height: 30px;
+    align-self: center;
+    line-height: 18px;
+}
 /* 左右按鈕 */
 .scroll-controls {
     display: flex;
@@ -576,8 +581,13 @@ img {width: 100%;}
     .gameblock-text{
         font-size: 16px;
     }
+    .gameblockBox .btn-secondary-border{
+        font-size: 12px;
+        line-height: 18px;
+    }
     .scroll-controls{
         margin-bottom: 0;
+        gap: 2px;
     }
     .providers-logoBox {
         gap: 5px;
