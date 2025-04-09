@@ -20,10 +20,38 @@
                     <div class="col-3 pe-0 header-logo">
                         <img src="./assets/img/101logo.png" class="PChide">
                     </div>
-                    <div class="col-9 text-end px-0 d-flex align-items-center justify-content-end">
+                    <!--not login-->
+                    <div class="col-9 text-end px-0 align-items-center justify-content-end" style="display: none;">
                         <button class="btn btn-primary">Login</button>
                         <button class="btn btn-secondary">Register</button>
 
+                        <div class="dropdown dropdownlangBox">
+                            <button class="btn dropdown-toggle btn-dropdown-lang px-1" data-bs-toggle="dropdown" data-bs-display="static">
+                                <img src="./assets/img/icon/en.png">
+                            </button>
+                            <ul class="dropdown-menu dropdown-lang-menu">
+                                <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/en.png"><span>English</span></button></li>
+                                <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/vn.png"><span>Tiếng Việt</span></button></li>
+                                <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/ph.png"><span>Pilipino</span></button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--login-->
+                    <div class="col-9 text-end px-0 align-items-center justify-content-end">
+                        <button class="btn btn-secondary MOBhide">Deposit</button>
+                        <button class="btn btn-secondary-border MOBhide">Withdrawal</button>
+                        <button class="btn btn-balance">
+                            <span>VND</span>
+                            <span>150K</span>
+                        </button>
+                        <button class="btn btn-user MOBhide">
+                            <img src="./assets/img/userimg/user1.png">
+                        </button>
+                        <button class="btn btn-notify">
+                            <img src="./assets/img/icon/notify.png">
+                            <div class="notify-dot"></div>
+                        </button>
                         <div class="dropdown dropdownlangBox">
                             <button class="btn dropdown-toggle btn-dropdown-lang px-1" data-bs-toggle="dropdown" data-bs-display="static">
                                 <img src="./assets/img/icon/en.png">
@@ -88,12 +116,13 @@
                 <!--providers-->
                 <div class="col-md-12 gameblockBox">
                     <div class="providersBox">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
                             <div class="gameblock-titleBox">
                                 <img src="./assets/img/icon/providers.png">
                                 <span class="gameblock-text">Providers</span>
                             </div>
                             <div class="scroll-controls">
+                                <a href="#" type="button" class="btn btn-secondary-border">See all</a>
                                 <button class="scroll-btn scroll-left"><img src="./assets/img/icon/arrowY_left.png"></button>
                                 <button class="scroll-btn scroll-right"><img src="./assets/img/icon/arrowY_right.png"></button>
                             </div>
@@ -145,12 +174,13 @@
                 <!--slots-->
                 <div class="col-md-12 gameblockBox">
                     <div class="slotsBox">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
                             <div class="gameblock-titleBox">
                                 <img src="./assets/img/icon/slots.png">
                                 <span class="gameblock-text">Slot Games</span>
                             </div>
                             <div class="scroll-controls">
+                                <a href="#" type="button" class="btn btn-secondary-border">See all</a>
                                 <button class="scroll-btn scroll-left"><img src="./assets/img/icon/arrowY_left.png"></button>
                                 <button class="scroll-btn scroll-right"><img src="./assets/img/icon/arrowY_right.png"></button>
                             </div>
@@ -271,12 +301,13 @@
                 <!--Fishing-->
                 <div class="col-md-12 gameblockBox">
                     <div class="FishingBox">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
                             <div class="gameblock-titleBox">
                                 <img src="./assets/img/icon/fishing.png">
                                 <span class="gameblock-text">Fishing</span>
                             </div>
                             <div class="scroll-controls">
+                                <a href="#" type="button" class="btn btn-secondary-border">See all</a>
                                 <button class="scroll-btn scroll-left"><img src="./assets/img/icon/arrowY_left.png"></button>
                                 <button class="scroll-btn scroll-right"><img src="./assets/img/icon/arrowY_right.png"></button>
                             </div>
@@ -359,6 +390,7 @@
                 </div>
             </div>
 
+            <!--footer-->
             <div class="footer">
                 <div class="row">
                     <div class="col-6 col-md-3">
@@ -414,6 +446,8 @@
                     </div>
                 </div>
             </div>
+
+            <!--copyright-->
             <div class="copyright text-center">
                 <span>©101 BEST. All Rights Reserved 2025</span>
             </div>
