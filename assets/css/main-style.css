@@ -197,6 +197,7 @@ img {width: 100%;}
     margin-right: 0;
     margin-left: 0;
 }
+/* banner */
 .bannerBox{
     padding: 0;
 }
@@ -207,6 +208,7 @@ img {width: 100%;}
 .homecontentBox{
     padding: 10px 20px;
 }
+/* marquee */
 .marqueeBox{
     display: flex;
     height: 48px;
@@ -228,6 +230,7 @@ img {width: 100%;}
     font-size: 16px;
     color: #fff;
 }
+/* gameroom */
 .gameroomBox {
     display: flex;
     gap: 15px;
@@ -238,6 +241,9 @@ img {width: 100%;}
     flex: 1;
     text-align: center;
     text-decoration: none;
+}
+.gameroomlink:hover {
+    filter:drop-shadow(0px 0px 10px rgba(255, 255, 255, .5));
 }
 .gameroomlink img {
     display: block;
@@ -254,6 +260,77 @@ img {width: 100%;}
     font-weight: 700;
     text-shadow: 1px 1px 5px rgba(0,0,0,1);
 }
+
+
+
+.gameblockBox{
+    background: rgba(77, 7, 24, 1);
+    margin: 10px 0;
+    padding: 16px;
+    border-radius: 16px;
+}
+.gameblock-titleBox{
+    align-items: center;
+    display: flex;
+    margin-bottom: 10px;
+}
+.gameblock-titleBox img{
+    width: 32px;
+    height: auto;
+    margin-right: 10px;
+}
+.gameblock-text{
+    color: rgba(254, 240, 28, 1);
+    font-size: 24px;
+    font-weight: 700;
+}
+.scroll-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.scroll-btn {
+    background: none;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scroll-btn:disabled {
+    opacity: .3;
+    cursor: not-allowed;
+}
+.providers-logoBox {
+    gap: 15px;
+    display: flex;
+    overflow-x: auto;   /* 啟用水平滾動 */
+    scroll-behavior: smooth;   /* 平滑滾動效果 */
+    white-space: nowrap;   /* 防止項目換行 */
+}
+.providers-logoBox::-webkit-scrollbar {
+    display: none;   /* 隱藏滾動條 */
+}
+.providers-logoimgBox{
+    width: 260px;
+    height: 110px;
+    background: rgba(18, 0, 0, 1);
+    border-radius: 16px;
+    flex: 0 0 auto;   /* 防止項目縮小 */
+}
+.providers-logoimgBox img{
+    width: 100px;
+    height: auto;
+}
+
+
+
+
 @media screen and (max-width: 1200px){
     .gameroomlink span {
         font-size: 18px;
@@ -279,7 +356,6 @@ img {width: 100%;}
     .marqueeBox marquee {
         font-size: 12px;
     }
-
     .gameroomBox {
         gap: 5px;
         padding: 10px 0;
@@ -292,6 +368,29 @@ img {width: 100%;}
         bottom: 3px;
         left: 50%;
         transform: translatex(-50%);
+    }
+    .gameblockBox{
+        padding: 10px;
+    }
+    .gameblock-titleBox{
+        margin-bottom: 0;
+    }
+    .gameblock-text{
+        font-size: 16px;
+    }
+    .scroll-controls{
+        margin-bottom: 0;
+    }
+    .providers-logoBox {
+        gap: 5px;
+    }
+    .providers-logoimgBox{
+        width: 100px;
+        height: 40px;
+        border-radius: 8px;
+    }
+    .providers-logoimgBox img{
+        width: 40px;
     }
 }
 
