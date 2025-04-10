@@ -30,8 +30,7 @@ scrollControls.forEach(control => {
     const leftBtn = control.querySelector('.scroll-left');
     const rightBtn = control.querySelector('.scroll-right');
 
-    // 動態計算滑動距離（firstItem的寬度 + 間距）
-    const firstItem = container.querySelector('.providers-logoimgBox') || container.querySelector('.game-entranceimgBox');
+    const firstItem = container.querySelector('.providers-logoimgBox') || container.querySelector('.game-entranceimgBox');   // 動態計算滑動距離
     const scrollDistance = firstItem ? firstItem.offsetWidth * 3 : 0;
     const updateButtonStates = () => {
         leftBtn.disabled = container.scrollLeft <= 0;
@@ -53,5 +52,34 @@ const favoriteIcons = document.querySelectorAll('.favoritesicon');
 favoriteIcons.forEach(icon => {
     icon.addEventListener('click', () => {
         icon.classList.toggle('active');
+    });
+});
+
+
+
+//header點擊顯示/隱藏細節
+const buttons = {
+    'btn-notify': document.querySelector('.notify-popupBox'),
+    'btn-player': document.querySelector('.player-popupBox'),
+    'btn-gamewallet': document.querySelector('.gamewallet-popupBox')
+};
+const allPopups = Object.values(buttons);
+
+function hideAllPopups() {
+    allPopups.forEach(popup => {
+        popup.style.display = 'none';
+    });
+}
+
+Object.keys(buttons).forEach(buttonClass => {   // 各別按鈕綁定事件
+    const button = document.querySelector(`.${buttonClass}`);
+    const popup = buttons[buttonClass];
+    button.addEventListener('click', () => {
+        if (popup.style.display === 'none') {
+            hideAllPopups();
+            popup.style.display = 'block';
+        } else {
+            popup.style.display = 'none';
+        }
     });
 });
