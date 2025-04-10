@@ -111,20 +111,20 @@ img {width: 100%;}
     left: unset;
     right: 0;
 }
-.btn-balance{
+.btn-gamewallet{
     background: rgba(178, 35, 53, 1);
     color: rgba(254, 240, 28, 1);
     font-weight: 700;
     border-radius: 16px;
     height: 48px;
 }
-.btn-balance:hover{
+.btn-gamewallet:hover{
     background: rgba(178, 35, 53, 1);
 }
-.btn-user{
+.btn-player{
     padding: 0;
 }
-.btn-user img{
+.btn-player img{
     width: 48px;
     height: 48px;
 }
@@ -156,7 +156,7 @@ img {width: 100%;}
     .btn-dropdown-lang img{
         width: 32px;
     }
-    .btn-balance{
+    .btn-gamewallet{
         height: 40px;
     }
     .btn-notify{
@@ -494,9 +494,7 @@ img {width: 100%;}
     font-weight: 700;
     margin-top: 0;
 }
-
-
-
+/* footer */
 .footer{
     margin-top: 30px;
     background: linear-gradient(90deg, #3E0613 0%, #67122B 50%, #3E0613 100%);
@@ -522,16 +520,11 @@ img {width: 100%;}
     width: auto;
     margin-right: 10px;
 }
-
-
+/* copyright */
 .copyright{
     background: rgba(18, 0, 0, 1);
     padding: 8px;
 }
-
-
-
-
 @media screen and (max-width: 1200px){
     .gameroomlink span {
         font-size: 18px;
@@ -623,9 +616,157 @@ img {width: 100%;}
         font-size: 12px;
     }
 }
-
-
-
+/* Popup */
+/* notify popup */
+.notify-popupBox{
+    position: fixed;
+    top: 105px;
+    right: 5px;
+    background: rgba(77, 7, 24, 1);
+    border: 1px solid rgba(178, 35, 53, 1);
+    border-radius: 8px;
+    padding: 15px;
+    width: 400px;
+    height: 500px;
+    overflow-y: auto;
+    z-index: 99;
+}
+.notify-popupBox::-webkit-scrollbar {
+    width: 3px;
+}
+.notify-popupBox::-webkit-scrollbar-thumb {
+    background-color: rgba(158, 57, 57, 1);
+    border-radius: 1px;
+}
+.notify-popupBox::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1px;
+}
+.notifypopup-blockBox{
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 15px;
+}
+.notifypopup-blockBox.unread{
+    background: rgba(158, 57, 57, 1);
+}
+.notifypopup-blockBox.read{
+    background: rgba(18, 0, 0, 1);
+}
+.notifypopup-titleBox{
+    margin-bottom: 5px;
+}
+.notifypopup-title{
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+.notifypopup-time{
+    color: rgba(254, 240, 28, 1);
+}
+/* player popup */
+.player-popupBox{
+    position: fixed;
+    top: 105px;
+    right: 5px;
+    background: rgba(77, 7, 24, 1);
+    border: 1px solid rgba(178, 35, 53, 1);
+    border-radius: 8px;
+    padding: 15px;
+    width: 400px;
+    height: auto;
+    overflow-y: auto;
+    z-index: 99;
+}
+.playerpopup-infoBox img{
+    width: 48px;
+    height: 48px;
+    margin-right: 15px;
+}
+.playerpopup-balance{
+    font-weight: 700;
+    color: rgba(254, 240, 28, 1);
+}
+.playerpopup-logoutbtn{
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 8px;
+}
+.playerpopup-logoutbtn img{
+    height: 16px;
+    width: auto;
+    margin-left: 10px;
+}
+.playerpopup-viplevelBox{
+    margin-top: 15px;
+}
+.playerpopup-viplevelBox a {
+    color: #fff;
+}
+.playerpopup-levelBox{
+    padding: 15px;
+    margin: 2px 0px;
+    border: 1px solid #fff;
+    border-radius: 16px;
+}
+.playerpopup-levelimg{
+    position: relative;
+}
+.viplevelimg-num{
+    position: absolute;
+    font-size: 28px;
+    font-weight: 600;
+    top: 18px;
+    left: 36px;
+}
+.playerpopup-leveltext{
+    font-weight: 900;
+    color: #FF0004;
+    -webkit-text-stroke: 2px solid #FFF21C;
+    text-shadow: -1px -1px 0 #FFF21C,  1px -1px 0 #FFF21C,  -1px  1px 0 #FFF21C, 1px  1px 0 #FFF21C;
+}
+.playerpopup-levelnote{
+    font-size: 12px;
+}
+.playerpopup-pagelinkBox{
+    margin-top: 15px;
+}
+/* game wallet popup */
+.gamewallet-popupBox{
+    position: fixed;
+    top: 105px;
+    right: 5px;
+    background: rgba(77, 7, 24, 1);
+    border: 1px solid rgba(178, 35, 53, 1);
+    border-radius: 8px;
+    padding: 15px;
+    width: 400px;
+    height: 500px;
+    overflow-y: auto;
+    z-index: 99;
+}
+.gamewallet-popupBox::-webkit-scrollbar {
+    width: 3px;
+}
+.gamewallet-popupBox::-webkit-scrollbar-thumb {
+    background-color: rgba(158, 57, 57, 1);
+    border-radius: 1px;
+}
+.gamewallet-popupBox::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1px;
+}
+.walletpopup-titleBox{
+    font-size: 20px;
+    font-weight: 500;
+}
+.walletpopup-titleBox img{
+    width: 32px;
+    height: auto;
+    margin-right: 15px;
+}
+.walletpopup-totalbalance{
+    color: rgba(254, 240, 28, 1);
+}
 
 
 
