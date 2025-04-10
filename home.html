@@ -41,11 +41,11 @@
                     <div class="col-9 text-end px-0 align-items-center justify-content-end">
                         <button class="btn btn-secondary MOBhide">Deposit</button>
                         <button class="btn btn-secondary-border MOBhide">Withdrawal</button>
-                        <button class="btn btn-balance">
+                        <button class="btn btn-gamewallet">
                             <span>VND</span>
                             <span>150K</span>
                         </button>
-                        <button class="btn btn-user MOBhide">
+                        <button class="btn btn-player MOBhide">
                             <img src="./assets/img/userimg/user1.png">
                         </button>
                         <button class="btn btn-notify">
@@ -572,6 +572,138 @@
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- notify -->
+        <div class="notify-popupBox" style="display: none;">
+            <div class="notifypopup-blockBox unread">
+                <div class="notifypopup-titleBox d-flex align-items-center justify-content-between">
+                    <div class="notifypopup-title">Notification Title(unread)</div>
+                    <div class="notifypopup-time">Now</div>
+                </div>
+                <div class="notifypopup-content">This is the latest news section.</div>
+            </div>
+            <div class="notifypopup-blockBox read">
+                <div class="notifypopup-titleBox d-flex align-items-center justify-content-between">
+                    <div class="notifypopup-title">Notification Title(read)</div>
+                    <div class="notifypopup-time">10min ago</div>
+                </div>
+                <div class="notifypopup-content">This is the notification area. Various message notifications. It's great if you read it, but it's okay if you didn't.</div>
+            </div>
+            <div class="notifypopup-blockBox read">
+                <div class="notifypopup-titleBox d-flex align-items-center justify-content-between">
+                    <div class="notifypopup-title">Notification Title</div>
+                    <div class="notifypopup-time">10hr ago</div>
+                </div>
+                <div class="notifypopup-content">This is the notification area. Various message notifications. It's great if you read it, but it's okay if you didn't.</div>
+            </div>
+            <div class="notifypopup-blockBox read">
+                <div class="notifypopup-titleBox d-flex align-items-center justify-content-between">
+                    <div class="notifypopup-title">Notification Title</div>
+                    <div class="notifypopup-time">10days ago</div>
+                </div>
+                <div class="notifypopup-content">This is the notification area. Various message notifications. It's great if you read it, but it's okay if you didn't.</div>
+            </div>
+            <div class="notifypopup-blockBox read">
+                <div class="notifypopup-titleBox d-flex align-items-center justify-content-between">
+                    <div class="notifypopup-title">Notification Title</div>
+                    <div class="notifypopup-time">10months ago</div>
+                </div>
+                <div class="notifypopup-content">This is the notification area. Various message notifications. It's great if you read it, but it's okay if you didn't.</div>
+            </div>
+            <div class="notifypopup-blockBox read">
+                <div class="notifypopup-titleBox d-flex align-items-center justify-content-between">
+                    <div class="notifypopup-title">Notification Title</div>
+                    <div class="notifypopup-time">10years ago</div>
+                </div>
+                <div class="notifypopup-content">This is the notification area. Various message notifications. It's great if you read it, but it's okay if you didn't.</div>
+            </div>
+        </div>
+
+        <!-- player -->
+        <div class="player-popupBox" style="display: none;">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="playerpopup-infoBox d-flex align-items-center justify-content-between">
+                    <img src="./assets/img/userimg/user1.png">
+                    <div>
+                        <span class="playerpopup-name">Username</span>
+                        <div class="playerpopup-balance">
+                            <span>VND</span>
+                            <span>150K</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn playerpopup-logoutbtn d-flex align-items-center">
+                    <span>Logout</span>
+                    <img src="./assets/img/icon/logout.png">
+                </button>
+            </div>
+            <div class="playerpopup-viplevelBox">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div>VIP Status</div>
+                    <a href="#">view VIP</a>
+                </div>
+                <div class="playerpopup-levelBox d-flex align-items-center justify-content-between row">
+                    <div class="playerpopup-currentlevel col-4">
+                        <div class="playerpopup-levelimg">
+                            <img src="./assets/img/icon/level.png" class="viplevelimg-level">
+                            <span class="viplevelimg-num">2</span>
+                        </div>
+                        <div class="playerpopup-leveltext text-center fst-italic">
+                            <span>VIP</span>
+                            <span>2</span>
+                        </div>
+                        <div class="playerpopup-levelnote text-center">Current Level</div>
+                    </div>
+                    <div class="col-3">
+                        <img src="./assets/img/icon/levelarrow.png">
+                    </div>
+                    <div class="playerpopup-nextlevel col-4">
+                        <div class="playerpopup-levelimg">
+                            <img src="./assets/img/icon/level.png" class="viplevelimg-level">
+                            <span class="viplevelimg-num">3</span>
+                        </div>
+                        <div class="playerpopup-leveltext text-center fst-italic">
+                            <span>VIP</span>
+                            <span>3</span>
+                        </div>
+                        <div class="playerpopup-levelnote text-center">Next Level</div>
+                    </div>
+                </div>
+                <div class="playerpopup-pagelinkBox">
+                    <button class="btn pagelink-button text-start">
+                        <img src="./assets/img/icon/account.png">
+                        <span>My Account</span>
+                    </button>
+                    <button class="btn pagelink-button text-start">
+                        <img src="./assets/img/icon/bankmanage.png">
+                        <span>Bank Management</span>
+                    </button>
+                    <button class="btn pagelink-button text-start">
+                        <img src="./assets/img/icon/transaction.png">
+                        <span>Transaction</span>
+                    </button>
+                    <button class="btn pagelink-button text-start">
+                        <img src="./assets/img/icon/wallet.png">
+                        <span>Game Wallet</span>
+                    </button>
+                    <button class="btn pagelink-button text-start">
+                        <img src="./assets/img/icon/resetpw.png">
+                        <span>Reset Password</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- game wallet -->
+        <div class="gamewallet-popupBox" style="display: none;">
+            <div class="walletpopup-titleBox d-flex align-items-center">
+                <img src="./assets/img/icon/wallet.png">
+                <div>
+                    <span>Total points:</span>
+                    <span class="walletpopup-totalbalance">9,876,543,210</span>
                 </div>
             </div>
         </div>
