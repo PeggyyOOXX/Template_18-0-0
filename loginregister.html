@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/favicon.ico">
+    <title>LOGIN/REGISTER</title>
+
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/main-style.css" rel="stylesheet">
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="loginregister">
+        <!-- Header -->
+        <div class="header fixed-top d-flex align-items-center justify-content-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 pe-0 header-logo">
+                        <img src="./assets/img/101logo.png" class="PChide">
+                    </div>
+                    <!--not login-->
+                    <div class="col-9 text-end px-0 align-items-center justify-content-end">
+                        <button class="btn btn-primary">Login</button>
+                        <button class="btn btn-secondary">Register</button>
+
+                        <div class="dropdown dropdownlangBox">
+                            <button class="btn dropdown-toggle btn-dropdown-lang px-1" data-bs-toggle="dropdown" data-bs-display="static">
+                                <img src="./assets/img/icon/en.png">
+                            </button>
+                            <ul class="dropdown-menu dropdown-lang-menu">
+                                <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/en.png"><span>English</span></button></li>
+                                <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/vn.png"><span>Tiếng Việt</span></button></li>
+                                <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/ph.png"><span>Pilipino</span></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main content -->
+        <div class="main-content d-flex align-items-center justify-content-center">
+            <!-- Login -->
+            <div class="loginregister-popupBox loginBox">
+                <div class="lr-popuptitleBox d-flex">
+                    <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
+                    <div class="lr-popuptitle">Login</div>
+                </div>
+                <div class="lr-inputBox">
+                    <span class="lr-inputtitle">Phone number</span>
+                    <span class="lr-inputrequired">*</span>
+                    <div class="lr-inputcontent">
+                        <img src="./assets/img/icon/icon-phone.png" class="inputicon">
+                        <input placeholder="Enter your phone number">
+                    </div>
+                    <div class="lr-inputwarn">Warning message</div>
+                </div>
+                <div class="lr-inputBox">
+                    <span class="lr-inputtitle">Password</span>
+                    <span class="lr-inputrequired">*</span>
+                    <div class="lr-inputcontent">
+                        <img src="./assets/img/icon/icon-locked.png" class="inputicon">
+                        <input placeholder="Enter your password">
+                        <img src="./assets/img/icon/icon-eyeclose.png" class="inputicon">
+                        <img src="./assets/img/icon/icon-eyeopen.png" class="inputicon" style="display: none;">
+                    </div>
+                    <a href="#" class="lr-inputforgot">Forgot password?</a>
+                </div>
+                <div class="lr-enterbtnBox">
+                    <button class="btn btn-primary">Login</button>
+                </div>
+                <div class="line-text">Don't have an account?</div>
+                <div class="lr-enterbtnBox">
+                    <button class="btn btn-white-border">Register now</button>
+                </div>
+            </div>
+            
+            <!-- Register -->
+            <div class="loginregister-popupBox registerBox" style="display: none;">
+                <div class="lr-popuptitleBox d-flex">
+                    <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
+                    <div class="lr-popuptitle">Register</div>
+                </div>
+                <div class="lr-inputBox">
+                    <span class="lr-inputtitle">Phone number</span>
+                    <span class="lr-inputrequired">*</span>
+                    <div class="lr-inputcontent">
+                        <img src="./assets/img/icon/icon-phone.png" class="inputicon">
+                        <input placeholder="Enter your phone number">
+                    </div>
+                    <div class="lr-inputwarn">Warning message</div>
+                </div>
+                <div class="lr-inputBox">
+                    <span class="lr-inputtitle">Password</span>
+                    <span class="lr-inputrequired">*</span>
+                    <div class="lr-inputcontent">
+                        <img src="./assets/img/icon/icon-locked.png" class="inputicon">
+                        <input placeholder="Enter your password">
+                        <img src="./assets/img/icon/icon-eyeclose.png" class="inputicon">
+                        <img src="./assets/img/icon/icon-eyeopen.png" class="inputicon" style="display: none;">
+                    </div>
+                    <div class="lr-inputwarn">Warning message</div>
+                </div>
+                <div class="lr-inputBox">
+                    <span class="lr-inputtitle">Confirm password</span>
+                    <span class="lr-inputrequired">*</span>
+                    <div class="lr-inputcontent">
+                        <img src="./assets/img/icon/icon-locked.png" class="inputicon">
+                        <input placeholder="Confirm your password">
+                        <img src="./assets/img/icon/icon-eyeclose.png" class="inputicon">
+                        <img src="./assets/img/icon/icon-eyeopen.png" class="inputicon" style="display: none;">
+                    </div>
+                    <div class="lr-inputwarn">Warning message</div>
+                </div>
+                <div class="lr-inputBox">
+                    <span class="lr-inputtitle">Verification Code</span>
+                    <span class="lr-inputrequired">*</span>
+                    <div class="lr-inputcontent">
+                        <img src="./assets/img/icon/icon-verify.png" class="inputicon">
+                        <input placeholder="Verification code">
+                        <img src="./assets/img/icon/verificationcode.png" class="verifycodeimg">
+                    </div>
+                </div>
+                <div class="lr-inputBox">
+                    <label class="lr-radiolabel">
+                        <input type="radio" class="lr-defaultradio">
+                        <span class="lr-inputradio"></span>
+                        <span>I agree to the <a href="#">relevant terms</a> and <a href="#">privacy policy</a></span>
+                    </label>
+                </div>
+                <div class="lr-enterbtnBox">
+                    <button class="btn btn-primary">Register</button>
+                </div>
+                <div class="lr-directions text-center">
+                    <span>Already have an account? <a href="#">Login now</a></span>
+                </div>
+            </div>
+
+            <!-- Forgot password -->
+            <div class="loginregister-popupBox resetpasswordBox" style="display: none;">
+                <div class="lr-popuptitleBox d-flex">
+                    <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
+                    <div class="lr-popuptitle">Reset password</div>
+                </div>
+                <div class="lr-directions text-center">
+                    <span>Please enter your phone number to receive the OTP verification code.</span>
+                </div>
+                <div class="lr-inputBox">
+                    <div class="lr-inputcontent">
+                        <img src="./assets/img/icon/icon-phone.png" class="inputicon">
+                        <input placeholder="Enter your phone number">
+                    </div>
+                    <div class="lr-inputwarn">Warning message</div>
+                </div>
+                <div class="lr-enterbtnBox">
+                    <button class="btn btn-primary">Send OTP</button>
+                </div>
+            </div>
+
+            <!-- enter OTP -->
+            <div class="loginregister-popupBox verifycodeBox" style="display: none;">
+                <div class="lr-popuptitleBox d-flex">
+                    <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
+                    <div class="lr-popuptitle">Reset password</div>
+                </div>
+                <div class="lr-directions text-center">
+                    <span>Please enter the OTP.</span>
+                </div>
+                <div class="lr-inputBox">
+                    <div class="lr-inputcontent">
+                        <input placeholder="Enter the OTP">
+                    </div>
+                </div>
+                
+                <div class="lr-directions text-center">
+                    <span class="lr-verifycountdown">0:59</span>
+                </div>
+                <div class="lr-directions text-center">
+                    <span>Haven't received it yet? <a href="#">Resend OTP</a></span>
+                </div>
+                <div class="lr-enterbtnBox">
+                    <button class="btn btn-primary">Verify</button>
+                </div>
+            </div>
+
+            <!-- enter new password -->
+            <div class="loginregister-popupBox newpasswordBox" style="display: none;">
+                <div class="lr-popuptitleBox d-flex">
+                    <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
+                    <div class="lr-popuptitle">Reset password</div>
+                </div>
+                <div class="lr-directions text-center">
+                    <span>Enter your new password</span>
+                </div>
+                <div class="lr-inputBox">
+                    <div class="lr-inputcontent">
+                        <input placeholder="Enter new password">
+                    </div>
+                    <div class="lr-inputwarn">Warning message</div>
+                </div>
+                <div class="lr-enterbtnBox">
+                    <button class="btn btn-primary">Reset password</button>
+                </div>
+            </div>
+
+            <!-- Reset password success -->
+            <div class="loginregister-popupBox resetsuccessBox" style="display: none;">
+                <div class="lr-popuptitleBox d-flex">
+                    <div class="lr-popuptitle">Reset password</div>
+                </div>
+                <div class="lr-directions text-center">
+                    <img src="./assets/img/icon/success.png" class="resetsuccessimg">
+                </div>
+                <div class="lr-directions text-center">
+                    <span>Congratulations.<br>Your password has been reset.</span>
+                </div>
+                <div class="lr-enterbtnBox">
+                    <button class="btn btn-primary">Login now</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-logo text-center">
+                <img src="./assets/img/101logo.png">
+            </div>
+
+            <!-- Game Categories -->
+            <div class="pagelinkBox">
+                <div class="pagelink-title">Game Categories</div>
+                <button class="btn pagelink-button text-start MOBhide">
+                    <img src="./assets/img/icon/home.png">
+                    <span>Home</span>
+                </button>
+                <button class="btn pagelink-button text-start">
+                    <img src="./assets/img/icon/cockfight.png">
+                    <span>Cockfighting</span>
+                </button>
+                <button class="btn pagelink-button text-start">
+                    <img src="./assets/img/icon/slots.png">
+                    <span>Slots</span>
+                </button>
+                <button class="btn pagelink-button text-start">
+                    <img src="./assets/img/icon/live.png">
+                    <span>Live Casino</span>
+                </button>
+                <button class="btn pagelink-button text-start">
+                    <img src="./assets/img/icon/lottery.png">
+                    <span>Lottery</span>
+                </button>
+                <button class="btn pagelink-button text-start">
+                    <img src="./assets/img/icon/sports.png">
+                    <span>Sports</span>
+                </button>
+                <button class="btn pagelink-button text-start">
+                    <img src="./assets/img/icon/board.png">
+                    <span>Board</span>
+                </button>
+                <button class="btn pagelink-button text-start">
+                    <img src="./assets/img/icon/fishing.png">
+                    <span>Fishing</span>
+                </button>
+                <button class="btn pagelink-button text-start">
+                    <img src="./assets/img/icon/esports.png">
+                    <span>E-Sports</span>
+                </button>
+            </div>
+
+            <!-- Account -->
+            <div class="pagelinkBox">
+                <div class="pagelink-title">Account</div>
+                <button class="btn pagelink-button text-start">
+                    <img src="./assets/img/icon/account.png">
+                    <span>My Account</span>
+                </button>
+                <button class="btn pagelink-button text-start MOBhide">
+                    <img src="./assets/img/icon/deposit.png">
+                    <span>Deposit</span>
+                </button>
+                <button class="btn pagelink-button text-start MOBhide">
+                    <img src="./assets/img/icon/withdrawal.png">
+                    <span>Withdrawal</span>
+                </button>
+            </div>
+            
+            <!-- Others -->
+            <div class="pagelinkBox pb-3">
+                <div class="pagelink-title">Others</div>
+                <button class="btn pagelink-button text-start MOBhide">
+                    <img src="./assets/img/icon/support.png">
+                    <span>Support</span>
+                </button>
+                <button class="btn pagelink-button text-start MOBhide">
+                    <img src="./assets/img/icon/promotion.png">
+                    <span>Promotion</span>
+                </button>
+                <button class="btn pagelink-button text-start">
+                    <img src="./assets/img/icon/affiliate.png">
+                    <span>Affiliate</span>
+                </button>
+            </div>
+        </div>
+        <div class="sidebar-overlay"></div>
+
+        <!-- Mobile function bar -->
+        <div class="functionbar fixed-bottom PChide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 functionBox">
+                        <div class="function-pagelink">
+                            <a href="#">
+                                <img src="./assets/img/icon/home.png">
+                                <span>Home</span>
+                            </a>
+                        </div>
+                        <div class="function-pagelink">
+                            <a href="#">
+                                <img src="./assets/img/icon/promotion.png">
+                                <span>Promotion</span>
+                            </a>
+                        </div>
+                        <div class="function-pagelink">
+                            <a href="#">
+                                <img src="./assets/img/icon/deposit.png">
+                                <span>Deposit</span>
+                            </a>
+                        </div>
+                        <div class="function-pagelink">
+                            <a href="#">
+                                <img src="./assets/img/icon/support.png">
+                                <span>Support</span>
+                            </a>
+                        </div>
+                        <div class="function-pagelink toggle-sidebar">
+                            <a href="#">
+                                <img src="./assets/img/icon/menu.png">
+                                <span>Menu</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="./assets/js/layout.js"></script>
+</body>
+</html> 
