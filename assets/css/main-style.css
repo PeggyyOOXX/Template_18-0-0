@@ -1,7 +1,6 @@
 html, body{
     background: rgba(18, 0, 0, 1);
     color: #fff;
-    height: 100%;
     margin: 0;
 }
 body {
@@ -58,6 +57,31 @@ img {width: 100%;}
     border: 1px solid rgba(254, 240, 28, 1);
     color: rgba(18, 0, 0, 1);
 }
+.btn-white-border{
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.btn-white-border:hover{
+    background: #fff;
+    border: 1px solid #fff;
+    color: rgba(18, 0, 0, 1);
+}
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 3px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(158, 57, 57, 1);
+    border-radius: 1px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1px;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
 /* Header */
 .header {
     background: linear-gradient(90deg, #3E0613 0%, #67122B 50%, #3E0613 100%);
@@ -216,17 +240,6 @@ img {width: 100%;}
     overflow-y: auto;
     z-index: 9999;
     transition: transform 0.4s ease-in-out;
-}
-.sidebar::-webkit-scrollbar {
-    width: 2px;
-}
-.sidebar::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, .2);
-    border-radius: 1px;
-}
-.sidebar::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, .3);
-    border-radius: 1px;
 }
 .sidebar-logo{
     padding: 32px;
@@ -430,9 +443,9 @@ img {width: 100%;}
 /* game img */
 .game-imgBox {
     gap: 15px;
-    overflow-x: auto;   /* 啟用水平滾動 */
-    scroll-behavior: smooth;   /* 平滑滾動效果 */
-    white-space: nowrap;   /* 防止項目換行 */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
 }
 .game-imgBox::-webkit-scrollbar {
     display: none;   /* 隱藏滾動條 */
@@ -636,17 +649,6 @@ img {width: 100%;}
     overflow-y: auto;
     z-index: 99;
 }
-.notify-popupBox::-webkit-scrollbar {
-    width: 3px;
-}
-.notify-popupBox::-webkit-scrollbar-thumb {
-    background-color: rgba(158, 57, 57, 1);
-    border-radius: 1px;
-}
-.notify-popupBox::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 1px;
-}
 .notifypopup-blockBox{
     margin-bottom: 10px;
     border-radius: 8px;
@@ -668,6 +670,14 @@ img {width: 100%;}
 }
 .notifypopup-time{
     color: rgba(254, 240, 28, 1);
+}
+@media screen and (max-width: 767px){
+    .notify-popupBox{
+        width: 95%;
+        top: 77px;
+        right: 50%;
+        transform: translateX(50%);
+    }
 }
 /* player popup */
 .player-popupBox{
@@ -729,7 +739,6 @@ img {width: 100%;}
 .playerpopup-leveltext{
     font-weight: 900;
     color: #FF0004;
-    -webkit-text-stroke: 2px solid #FFF21C;
     text-shadow: -1px -1px 0 #FFF21C,  1px -1px 0 #FFF21C,  -1px  1px 0 #FFF21C, 1px  1px 0 #FFF21C;
 }
 .playerpopup-levelnote{
@@ -755,17 +764,6 @@ img {width: 100%;}
 }
 .walletpopup-balancedetailBox{
     position: relative;
-}
-.gamewallet-popupBox::-webkit-scrollbar {
-    width: 3px;
-}
-.gamewallet-popupBox::-webkit-scrollbar-thumb {
-    background-color: rgba(158, 57, 57, 1);
-    border-radius: 1px;
-}
-.gamewallet-popupBox::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 1px;
 }
 .walletpopup-titleBox{
     font-size: 20px;
@@ -815,6 +813,189 @@ img {width: 100%;}
     background: linear-gradient(180deg, #FF0004 0%, #A30003 100%);
     border: 1px solid rgba(255, 0, 19, 1);
     border-radius: 8px;
+}
+/* mobile player detail */
+.mobileplayerBox{
+    background: rgba(178, 35, 53, 1);
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+.mobileplayer-infoBox img{
+    width: 48px;
+    height: auto;
+}
+.mobileplayer-balance{
+    font-weight: 700;
+    color: rgba(254, 240, 28, 1);
+    gap: 3px;
+}
+.mobileplayer-balance img{
+    width: 24px;
+}
+.mobileplayer-infoBox .btn-secondary, .mobileplayer-infoBox .btn-secondary-border{
+    font-size: 12px;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+/* login/register main */
+.loginregister .main-content{
+    background-image: url(../img/loginregisterBG.png);
+    height: calc(100vh - 100px);
+}
+.loginregister-popupBox{
+    background: rgba(77, 7, 24, 1);
+    border: 1px solid rgba(178, 35, 53, 1);
+    border-radius: 16px;
+    padding: 40px;
+    width: 488px;
+}
+.lr-popuptitleBox{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.btn-arrow {
+    position: absolute;
+    left: 0;
+    background: none;
+    border: none;
+    padding-left: 0;
+}
+.lr-popuptitle{
+    color: rgba(254, 240, 28, 1);
+    font-size: 32px;
+    font-weight: 700;
+}
+.lr-inputBox{
+    margin-top: 16px;
+}
+.lr-inputtitle{
+    font-size: 20px;
+}
+.lr-inputrequired{
+    color: rgba(254, 240, 28, 1);
+    font-size: 20px;
+}
+.lr-inputcontent {
+    display: flex;
+    align-items: center;
+    background: rgba(128, 45, 45, 1);
+    border: 1px solid rgba(178, 35, 53, 1);
+    border-radius: 8px;
+    padding: 8px 12px;
+    gap: 8px;
+}
+.lr-inputcontent input{
+    flex: 1;
+    min-width: 0;   /* 阻止撐爆 */
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    
+}
+.lr-inputcontent .inputicon{
+    width: 20px;
+    height: auto;
+}
+.lr-inputwarn{
+    color:rgba(255, 0, 19, 1);
+    font-size: 12px;
+}
+.lr-inputforgot{
+    color: rgba(254, 240, 28, 1);
+    text-decoration: underline;
+    display: block;
+    text-align: end;
+    cursor: pointer;
+}
+.lr-enterbtnBox{
+    margin-top: 16px;
+}
+.lr-enterbtnBox button{
+    border-radius: 8px;
+    width: 100%;
+    padding: 8px 12px;
+}
+.line-text {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 16px;
+}
+.line-text::before,
+.line-text::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #fff;
+    margin: 0 2px;
+}
+.verifycodeimg{
+    height: 32px;
+    width: auto;
+}
+.lr-radiolabel {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+.lr-defaultradio{
+    display: none;
+}
+.lr-inputradio {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+} 
+.lr-defaultradio:checked + .lr-inputradio::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.lr-radiolabel a{
+    color: rgba(255, 0, 0, 1);
+}
+.lr-directions{
+    margin-top: 16px;
+}
+.lr-directionslogin{
+    color: rgba(254, 240, 28, 1);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.lr-verifycountdown{
+    color: rgba(254, 240, 28, 1);
+    font-size: 24px;
+    font-weight: 600;
+}
+.lr-resendotp{
+    color: rgba(254, 240, 28, 1);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.resetsuccessimg{
+    width: 150px;
+    height: auto;
+}
+@media screen and (max-width: 767px){
+    .loginregister-popupBox{
+        width: 95%;
+        padding: 24px 16px;
+        max-height: 95%;
+        overflow-y: auto;
+    }
 }
 
 
