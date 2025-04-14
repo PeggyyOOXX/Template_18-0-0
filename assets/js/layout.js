@@ -15,6 +15,8 @@ sidebarButtons.forEach(button => {
     });
 });
 
+
+
 //遊戲入口圖左右滑動
 const scrollControls = document.querySelectorAll('.scroll-controls');
 scrollControls.forEach(control => {
@@ -47,6 +49,8 @@ scrollControls.forEach(control => {
     container.addEventListener('scroll', updateButtonStates);   // 監聽滾動
 });
 
+
+
 //favoritesicon點擊添加/移除active
 const favoriteIcons = document.querySelectorAll('.favoritesicon');
 favoriteIcons.forEach(icon => {
@@ -74,12 +78,89 @@ function hideAllPopups() {
 Object.keys(buttons).forEach(buttonClass => {   // 各別按鈕綁定事件
     const button = document.querySelector(`.${buttonClass}`);
     const popup = buttons[buttonClass];
+    if (button && popup) {
+        button.addEventListener('click', () => {
+            if (popup.style.display === 'none') {
+                hideAllPopups();
+                popup.style.display = 'block';
+            } else {
+                popup.style.display = 'none';
+            }
+        });
+    }
+});
+
+
+
+//登入註冊頁面-彈窗連結
+const lrallPopups = document.querySelectorAll('.loginregister-popupBox');
+const resetpasswordBox = document.querySelector('.resetpasswordBox');
+const registerBox = document.querySelector('.registerBox');
+const loginBox = document.querySelector('.loginBox');
+const enterotpBox = document.querySelector('.enterotpBox');
+const newpasswordBox = document.querySelector('.newpasswordBox');
+const resetsuccessBox = document.querySelector('.resetsuccessBox');
+
+const forgotLink = document.querySelector('.lr-inputforgot');
+const directionsloginLink = document.querySelector('.lr-directionslogin');
+const registerButton = document.querySelector('.btn-lr-register');
+const sendotpButton = document.querySelector('.btn-sendotp');
+const verifyotpButton = document.querySelector('.btn-verifyotp');
+const resetpwButton = document.querySelector('.btn-resetpw');
+const loginnowButton = document.querySelector('.btn-loginnow');
+const backButton = document.querySelectorAll('.btn-arrow');
+
+let historyStack = [];   // 追蹤彈窗歷史
+function hidelrAllPopups() {   // 隱藏所有彈窗
+    lrallPopups.forEach(popup => {
+        popup.style.display = 'none';
+    });
+}
+function showPopup(popup) {   // 顯示彈窗並記錄到歷史
+    hidelrAllPopups();
+    popup.style.display = 'block';
+    if (historyStack[historyStack.length - 1] !== popup) {
+        historyStack.push(popup);
+    }
+}
+function goBack() {   // 返回上一個彈窗
+    if (historyStack.length > 1) {
+        historyStack.pop();
+        const previousPopup = historyStack[historyStack.length - 1];
+        hidelrAllPopups();
+        previousPopup.style.display = 'block';
+    }
+}
+
+forgotLink.addEventListener('click', () => {   // 點擊ForgotPW
+    showPopup(resetpasswordBox);
+});
+registerButton.addEventListener('click', () => {   // 點擊btn-RegisterNow
+    showPopup(registerBox);
+});
+directionsloginLink.addEventListener('click', () => {   // 點擊LoginNow
+    showPopup(loginBox);
+});
+sendotpButton.addEventListener('click', () => {   // 點擊btn-SendOTP
+    showPopup(enterotpBox);
+});
+verifyotpButton.addEventListener('click', () => {   // 點擊btn-VerifyOTP
+    showPopup(newpasswordBox);
+});
+resetpwButton.addEventListener('click', () => {   // 點擊btn-Reset password
+    showPopup(resetsuccessBox);
+});
+loginnowButton.addEventListener('click', () => {   // 點擊btn-Login now
+    showPopup(loginBox);
+});
+backButton.forEach(button => {   // 點擊返回箭頭
     button.addEventListener('click', () => {
-        if (popup.style.display === 'none') {
-            hideAllPopups();
-            popup.style.display = 'block';
-        } else {
-            popup.style.display = 'none';
-        }
+        goBack();
     });
 });
+
+showPopup(loginBox);   // 初始化並加入歷史
+
+
+
+
