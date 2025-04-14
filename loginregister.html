@@ -66,14 +66,14 @@
                         <img src="./assets/img/icon/icon-eyeclose.png" class="inputicon">
                         <img src="./assets/img/icon/icon-eyeopen.png" class="inputicon" style="display: none;">
                     </div>
-                    <a href="#" class="lr-inputforgot">Forgot password?</a>
+                    <span class="lr-inputforgot">Forgot password?</span>
                 </div>
                 <div class="lr-enterbtnBox">
                     <button class="btn btn-primary">Login</button>
                 </div>
                 <div class="line-text">Don't have an account?</div>
                 <div class="lr-enterbtnBox">
-                    <button class="btn btn-white-border">Register now</button>
+                    <button class="btn btn-white-border btn-lr-register">Register now</button>
                 </div>
             </div>
             
@@ -134,11 +134,11 @@
                     <button class="btn btn-primary">Register</button>
                 </div>
                 <div class="lr-directions text-center">
-                    <span>Already have an account? <a href="#">Login now</a></span>
+                    <span>Already have an account? <span class="lr-directionslogin">Login now</span></span>
                 </div>
             </div>
 
-            <!-- Forgot password -->
+            <!-- Forgot password - Send OTP -->
             <div class="loginregister-popupBox resetpasswordBox" style="display: none;">
                 <div class="lr-popuptitleBox d-flex">
                     <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
@@ -155,12 +155,12 @@
                     <div class="lr-inputwarn">Warning message</div>
                 </div>
                 <div class="lr-enterbtnBox">
-                    <button class="btn btn-primary">Send OTP</button>
+                    <button class="btn btn-primary btn-sendotp">Send OTP</button>
                 </div>
             </div>
 
             <!-- enter OTP -->
-            <div class="loginregister-popupBox verifycodeBox" style="display: none;">
+            <div class="loginregister-popupBox enterotpBox" style="display: none;">
                 <div class="lr-popuptitleBox d-flex">
                     <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
                     <div class="lr-popuptitle">Reset password</div>
@@ -178,10 +178,10 @@
                     <span class="lr-verifycountdown">0:59</span>
                 </div>
                 <div class="lr-directions text-center">
-                    <span>Haven't received it yet? <a href="#">Resend OTP</a></span>
+                    <span>Haven't received it yet? <span class="lr-resendotp">Resend OTP</span></span>
                 </div>
                 <div class="lr-enterbtnBox">
-                    <button class="btn btn-primary">Verify</button>
+                    <button class="btn btn-primary btn-verifyotp">Verify</button>
                 </div>
             </div>
 
@@ -198,10 +198,10 @@
                     <div class="lr-inputcontent">
                         <input placeholder="Enter new password">
                     </div>
-                    <div class="lr-inputwarn">Warning message</div>
+                    <div class="lr-inputwarn" style="display: none;">Warning message</div>
                 </div>
                 <div class="lr-enterbtnBox">
-                    <button class="btn btn-primary">Reset password</button>
+                    <button class="btn btn-primary btn-resetpw">Reset password</button>
                 </div>
             </div>
 
@@ -217,7 +217,7 @@
                     <span>Congratulations.<br>Your password has been reset.</span>
                 </div>
                 <div class="lr-enterbtnBox">
-                    <button class="btn btn-primary">Login now</button>
+                    <button class="btn btn-primary btn-loginnow">Login now</button>
                 </div>
             </div>
 
