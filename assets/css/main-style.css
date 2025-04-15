@@ -892,8 +892,7 @@ img {width: 100%;}
     border: none;
     outline: none;
     color: #fff;
-    font-size: 16px;
-    
+    font-size: 16px; 
 }
 .lr-inputcontent .inputicon{
     width: 20px;
@@ -997,6 +996,84 @@ img {width: 100%;}
         overflow-y: auto;
     }
 }
+/*--------------------------------------------------------------------------------------------------------------*/
+/* promotion */
+.promotionBox{
+    padding: 20px;
+    padding-top: 40px;
+}
+.promotion-tabBox{
+    background: rgba(77, 7, 24, 1);
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    margin-left: 10px;
+    list-style: none;
+}
+.promotion-tab{
+    padding: 5px 8px;
+    margin: 0 3px;
+    color: #fff;
+    background: none;
+    border: none;
+
+}
+.promotion-tab.active{
+    background: rgba(178, 35, 53, 1);
+    border-radius: 4px;
+}
+.promotion-searchBox {
+    display: flex;
+    align-items: center;
+    background: rgba(77, 7, 24, 1);
+    border-radius: 8px;
+    padding: 8px 16px;
+    gap: 8px;
+    margin-right: 10px;
+}
+.promotion-searchBox input{
+    flex: 1;
+    min-width: 0;   /* 阻止撐爆 */
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 8px;
+}
+.promotion-searchBox input::placeholder{
+    color: rgba(255, 255, 255, .5);
+}
+.promotion-searchBox .searchicon{
+    width: 20px;
+    height: auto;
+}
+.promotion-cardBox{
+    border: 1px solid rgba(178, 35, 53, 1);
+    border-radius: 16px;
+}
+.promotion-cardBox img{
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+.promotion-textBox{
+    background: rgba(77, 7, 24, 1);
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding: 16px;
+}
+.promotion-texttitle{
+    color: rgba(254, 240, 28, 1);
+    font-weight: 700;
+    font-size: 24px;
+}
+.promotion-textdirection{
+    color: #fff;
+    line-height: 16px;
+}
+
 
 
 
@@ -1015,9 +1092,4 @@ img {width: 100%;}
 @media screen and (max-width: 767px){
     .MOBhide{display: none;}
 }
-
-
-
-
-
 
