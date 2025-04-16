@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/img/favicon.ico">
-    <title>HOME</title>
+    <title>AFFILIATE</title>
 
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/css/main-style.css" rel="stylesheet">
@@ -12,7 +12,7 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <div class="home">
+    <div class="affiliate">
         <!-- Header -->
         <div class="header fixed-top d-flex align-items-center justify-content-center">
             <div class="container">
@@ -72,366 +72,62 @@
         <div class="main-content">
             <div class="row">
                 <div class="col-md-12 bannerBox">
-                    <div class="carousel slide MOBhide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./assets/img/banner/home/pc/banner1.png">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/img/banner/home/pc/banner2.png">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/img/banner/home/pc/banner3.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel slide PChide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./assets/img/banner/home/mobile/banner1.png">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/img/banner/home/mobile/banner2.png">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/img/banner/home/mobile/banner3.png">
-                            </div>
-                        </div>
-                    </div>
+                    <img src="./assets/img/banner/affiliate/pc/banner1.png" class="MOBhide">
+                    <img src="./assets/img/banner/affiliate/mobile/banner1.png" class="PChide">
                 </div>
             </div>
-            <div class="home-contentBox">
-                <!-- marquee -->
-                <div class="col-md-12 marqueeBox">
-                    <img src="./assets/img/icon/marquee.png">
-                    <marquee><span>This is a RunHorseLight.</span></marquee>
-                </div>
-
-                <!-- mobile player detail -->
-                <div class="mobileplayerBox PChide">
-                    <div class="mobileplayer-infoBox d-flex align-items-center justify-content-between">
-                        <img src="./assets/img/userimg/user1.png">
-                        <div>
-                            <span class="mobileplayer-name">Username</span>
-                            <div class="mobileplayer-balance d-flex align-items-center justify-content-between">
-                                <span>VND</span>
-                                <span>150K</span>
-                                <img src="./assets/img/icon/refresh.png">
+            <div class="affiliate-contentBox">
+                <div class="affiliate-programBox">
+                    <div class="program-carousel">
+                        <div class="program-track">
+                            <div class="program-directionBox programdirectionBox1">
+                                <img src="./assets/img/icon/joinnow.png">
+                                <div>
+                                    <div class="program-title">Join Now</div>
+                                    <div class="program-content">Lorem ipsum dolor sit amet consectetur.</div>
+                                </div>
+                            </div>
+                            <div class="program-directionBox programdirectionBox2">
+                                <img src="./assets/img/icon/promote.png">
+                                <div>
+                                    <div class="program-title">Promote</div>
+                                    <div class="program-content">Lorem ipsum dolor sit amet consectetur.</div>
+                                </div>
+                            </div>
+                            <div class="program-directionBox programdirectionBox3">
+                                <img src="./assets/img/icon/startearn.png">
+                                <div>
+                                    <div class="program-title">Star Earning</div>
+                                    <div class="program-content">Lorem ipsum dolor sit amet consectetur.</div>
+                                </div>
                             </div>
                         </div>
-                        <button class="btn btn-secondary">Deposit</button>
-                        <button class="btn btn-secondary-border">Withdrawal</button>
-                    </div>
-                </div>
-
-                <!-- gameroom categories -->
-                <div class="col-md-12 gameroomBox">
-                    <a href="#" class="gameroomlink">
-                        <picture>
-                            <source media="(max-width: 767px)" srcset="./assets/img/gameroom/sports_MOB.png">
-                            <img src="./assets/img/gameroom/sports_PC.png" alt="SPORTS">
-                        </picture>
-                        <span>SPORTS</span>
-                    </a>
-                    <a href="#" class="gameroomlink">
-                        <picture>
-                            <source media="(max-width: 767px)" srcset="./assets/img/gameroom/live_MOB.png">
-                            <img src="./assets/img/gameroom/live_PC.png" alt="LIVE">
-                        </picture>
-                        <span>LIVE<br>CASINO</span>
-                    </a>
-                    <a href="#" class="gameroomlink">
-                        <picture>
-                            <source media="(max-width: 767px)" srcset="./assets/img/gameroom/slots_MOB.png">
-                            <img src="./assets/img/gameroom/slots_PC.png" alt="SLOTS">
-                        </picture>
-                        <span>SLOTS</span>
-                    </a>
-                    <a href="#" class="gameroomlink">
-                        <picture>
-                            <source media="(max-width: 767px)" srcset="./assets/img/gameroom/cockfight_MOB.png">
-                            <img src="./assets/img/gameroom/cockfight_PC.png" alt="COCK">
-                        </picture>
-                        <span>COCK<br>FIGHTING</span>
-                    </a>
-                </div>
-
-                <!--providers-->
-                <div class="col-md-12 gameblockBox">
-                    <div class="providersBox">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
-                            <div class="gameblock-titleBox">
-                                <img src="./assets/img/icon/providers.png">
-                                <span class="gameblock-text">Providers</span>
-                            </div>
-                            <div class="scroll-controls">
-                                <a href="#" type="button" class="btn btn-secondary-border">See all</a>
-                                <button class="scroll-btn scroll-left"><img src="./assets/img/icon/arrowY_left.png"></button>
-                                <button class="scroll-btn scroll-right"><img src="./assets/img/icon/arrowY_right.png"></button>
-                            </div>
-                        </div>
-                        <div class="providers-logoBox d-flex">
-                            <a href="#" class="providers-logoimgBox d-flex align-items-center justify-content-center">
-                                <img src="./assets/img/provider/jili_logo.png">
-                            </a>
-                            <a href="#" class="providers-logoimgBox d-flex align-items-center justify-content-center">
-                                <img src="./assets/img/provider/jdb_logo.png">
-                            </a>
-                            <a href="#" class="providers-logoimgBox d-flex align-items-center justify-content-center">
-                                <img src="./assets/img/provider/evo_logo.png">
-                            </a>
-                            <a href="#" class="providers-logoimgBox d-flex align-items-center justify-content-center">
-                                <img src="./assets/img/provider/micro_logo.png">
-                            </a>
-                            <a href="#" class="providers-logoimgBox d-flex align-items-center justify-content-center">
-                                <img src="./assets/img/provider/pp_logo.png">
-                            </a>
-                            <a href="#" class="providers-logoimgBox d-flex align-items-center justify-content-center">
-                                <img src="./assets/img/provider/ezugi_logo.png">
-                            </a>
-                            <a href="#" class="providers-logoimgBox d-flex align-items-center justify-content-center">
-                                <img src="./assets/img/provider/bng_logo.png">
-                            </a>
-                            <a href="#" class="providers-logoimgBox d-flex align-items-center justify-content-center">
-                                <img src="./assets/img/provider/winfinity_logo.png">
-                            </a>
-                            <a href="#" class="providers-logoimgBox d-flex align-items-center justify-content-center">
-                                <img src="./assets/img/provider/habanero_logo.png">
-                            </a>
-                            <a href="#" class="providers-logoimgBox d-flex align-items-center justify-content-center">
-                                <img src="./assets/img/provider/sexy_logo.png">
-                            </a>
-                            <a href="#" class="providers-logoimgBox d-flex align-items-center justify-content-center">
-                                <img src="./assets/img/provider/cq9_logo.png">
-                            </a>
-                            <a href="#" class="providers-logoimgBox d-flex align-items-center justify-content-center">
-                                <img src="./assets/img/provider/via_logo.png">
-                            </a>
-                            <a href="#" class="providers-logoimgBox d-flex align-items-center justify-content-center">
-                                <img src="./assets/img/provider/pg_logo.png">
-                            </a>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-index="0"></span>
+                            <span class="indicator" data-index="1"></span>
+                            <span class="indicator" data-index="2"></span>
                         </div>
                     </div>
                 </div>
 
-                <!--slots-->
-                <div class="col-md-12 gameblockBox">
-                    <div class="slotsBox">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
-                            <div class="gameblock-titleBox">
-                                <img src="./assets/img/icon/slots.png">
-                                <span class="gameblock-text">Slot Games</span>
-                            </div>
-                            <div class="scroll-controls">
-                                <a href="#" type="button" class="btn btn-secondary-border">See all</a>
-                                <button class="scroll-btn scroll-left"><img src="./assets/img/icon/arrowY_left.png"></button>
-                                <button class="scroll-btn scroll-right"><img src="./assets/img/icon/arrowY_right.png"></button>
-                            </div>
-                        </div>
-                        <div class="game-imgBox d-flex">
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/slots/Slot01.png">
-                                <span>JILI(1)</span>
-                                <div class="favoritesicon active"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/slots/Slot02.png">
-                                <span>PG SOFT(2)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/slots/Slot03.png">
-                                <span>PP(3)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/slots/Slot04.png">
-                                <span>JILI(4)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/slots/Slot01.png">
-                                <span>JILI(5)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/slots/Slot02.png">
-                                <span>PG SOFT(6)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/slots/Slot03.png">
-                                <span>PP(7)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/slots/Slot04.png">
-                                <span>PG SOFT(8)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/slots/Slot01.png">
-                                <span>JILI(9)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/slots/Slot02.png">
-                                <span>PG SOFT(10)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/slots/Slot03.png">
-                                <span>PP(11)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/slots/Slot04.png">
-                                <span>PP(12)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="nav nav-pills affiliate-tabBox" role="tablist">
+                        <button class="nav-link affiliate-tab active" data-bs-toggle="pill" data-bs-target="#Affiliate_CommissionPlan" type="button" role="tab">Commission Plan</button>
+                        <button class="nav-link affiliate-tab" data-bs-toggle="pill" data-bs-target="#Affiliate_FAQ" type="button" role="tab">FAQ</button>
                     </div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="Affiliate_CommissionPlan">Commission Plan</div>
+                    <div class="tab-pane fade" id="Affiliate_FAQ">FAQ</div>
                 </div>
 
-                <!--Fishing-->
-                <div class="col-md-12 gameblockBox">
-                    <div class="FishingBox">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
-                            <div class="gameblock-titleBox">
-                                <img src="./assets/img/icon/fishing.png">
-                                <span class="gameblock-text">Fishing</span>
-                            </div>
-                            <div class="scroll-controls">
-                                <a href="#" type="button" class="btn btn-secondary-border">See all</a>
-                                <button class="scroll-btn scroll-left"><img src="./assets/img/icon/arrowY_left.png"></button>
-                                <button class="scroll-btn scroll-right"><img src="./assets/img/icon/arrowY_right.png"></button>
-                            </div>
-                        </div>
-                        <div class="game-imgBox d-flex">
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/fishing/Fishing01.png">
-                                <span>JILI(1)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/fishing/Fishing02.png">
-                                <span>JDB(2)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/fishing/Fishing01.png">
-                                <span>FA CHAI(3)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/fishing/Fishing02.png">
-                                <span>JILI(4)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/fishing/Fishing01.png">
-                                <span>JDB(5)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/fishing/Fishing02.png">
-                                <span>FA CHAI(6)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/fishing/Fishing01.png">
-                                <span>JILI(7)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                            <div class="game-entranceimgBox d-flex align-items-center text-center flex-column">
-                                <img src="./assets/img/gameimg/fishing/Fishing02.png">
-                                <span>JDB(8)</span>
-                                <div class="favoritesicon"></div>
-                                <div class="gameplay-overlay d-flex align-items-center flex-column justify-content-center">
-                                    <img src="./assets/img/icon/gameplay-icon.png" class="play-icon">
-                                    <span>PLAY NOW</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+
+
+
+            
+
+
 
             <!--footer-->
             <div class="footer">
@@ -992,6 +688,87 @@
     
 
 
-    <script src="./assets/js/layout.js"></script>
+    <script src="./assets/js/layout.js" defer></script>
+
+    <script>
+    // 手機畫面步驟輪播
+    function isMobile() {
+        return window.innerWidth < 768;
+    }
+    const track = document.querySelector('.program-track');
+    const slides = document.querySelectorAll('.program-directionBox');
+    const indicators = document.querySelectorAll('.indicator');
+
+    if (track && slides.length > 0 && indicators.length > 0) {
+        let currentIndex = 0;
+
+        function initCarousel() {   // 初始化
+            if (isMobile()) {
+                updateTrack();
+                indicators.forEach(indicator => {
+                    indicator.addEventListener('click', function() {
+                        currentIndex = parseInt(this.getAttribute('data-index'));
+                        updateCarousel();
+                    });
+                });
+                let startX, moveX;   // 添加觸摸滑動
+                track.addEventListener('touchstart', function(e) {
+                    startX = e.touches[0].clientX;
+                });
+                track.addEventListener('touchmove', function(e) {
+                    moveX = e.touches[0].clientX;
+                });
+                track.addEventListener('touchend', function() {
+                    if (startX - moveX > 50) {
+                        currentIndex = Math.min(currentIndex + 1, slides.length - 1);
+                        updateCarousel();
+                    } else if (moveX - startX > 50) {
+                        currentIndex = Math.max(currentIndex - 1, 0);
+                        updateCarousel();
+                    }
+                });
+            }
+        }
+
+        function updateCarousel() {   // 更新輪播
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            indicators.forEach((indicator, index) => {
+                if (index === currentIndex) {
+                    indicator.classList.add('active');
+                } else {
+                    indicator.classList.remove('active');
+                }
+            });
+        }
+
+        function updateTrack() {   // 更新track
+            if (isMobile()) {
+                slides.forEach(slide => {
+                    slide.style.minWidth = '100%';
+                });
+            } else {
+                slides.forEach(slide => {
+                    slide.style.minWidth = '';
+                });
+                track.style.transform = '';
+            }
+        }
+        initCarousel();   // 初始化
+        window.addEventListener('resize', function() {   // 監聽視窗大小變化
+            updateTrack();
+            if (!isMobile()) {
+                track.style.transform = '';
+            } else {
+                updateCarousel();
+            }
+        });
+    } else {-
+        console.log("Element not exist", {
+            track: !!track,
+            slides: slides.length,
+            indicators: indicators.length
+        });
+    }
+    </script>
 </body>
 </html> 

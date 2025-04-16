@@ -350,5 +350,75 @@
 
 
     <script src="./assets/js/layout.js"></script>
+    <script>
+    //登入註冊頁面-彈窗連結
+    const lrallPopups = document.querySelectorAll('.loginregister-popupBox');
+    const resetpasswordBox = document.querySelector('.resetpasswordBox');
+    const registerBox = document.querySelector('.registerBox');
+    const loginBox = document.querySelector('.loginBox');
+    const enterotpBox = document.querySelector('.enterotpBox');
+    const newpasswordBox = document.querySelector('.newpasswordBox');
+    const resetsuccessBox = document.querySelector('.resetsuccessBox');
+
+    const forgotLink = document.querySelector('.lr-inputforgot');
+    const directionsloginLink = document.querySelector('.lr-directionslogin');
+    const registerButton = document.querySelector('.btn-lr-register');
+    const sendotpButton = document.querySelector('.btn-sendotp');
+    const verifyotpButton = document.querySelector('.btn-verifyotp');
+    const resetpwButton = document.querySelector('.btn-resetpw');
+    const loginnowButton = document.querySelector('.btn-loginnow');
+    const backButton = document.querySelectorAll('.btn-arrow');
+
+    let historyStack = [];   // 追蹤彈窗歷史
+    function hidelrAllPopups() {   // 隱藏所有彈窗
+        lrallPopups.forEach(popup => {
+            popup.style.display = 'none';
+        });
+    }
+    function showPopup(popup) {   // 顯示彈窗並記錄到歷史
+        hidelrAllPopups();
+        popup.style.display = 'block';
+        if (historyStack[historyStack.length - 1] !== popup) {
+            historyStack.push(popup);
+        }
+    }
+    function goBack() {   // 返回上一個彈窗
+        if (historyStack.length > 1) {
+            historyStack.pop();
+            const previousPopup = historyStack[historyStack.length - 1];
+            hidelrAllPopups();
+            previousPopup.style.display = 'block';
+        }
+    }
+
+    forgotLink.addEventListener('click', () => {   // 點擊ForgotPW
+        showPopup(resetpasswordBox);
+    });
+    registerButton.addEventListener('click', () => {   // 點擊btn-RegisterNow
+        showPopup(registerBox);
+    });
+    directionsloginLink.addEventListener('click', () => {   // 點擊LoginNow
+        showPopup(loginBox);
+    });
+    sendotpButton.addEventListener('click', () => {   // 點擊btn-SendOTP
+        showPopup(enterotpBox);
+    });
+    verifyotpButton.addEventListener('click', () => {   // 點擊btn-VerifyOTP
+        showPopup(newpasswordBox);
+    });
+    resetpwButton.addEventListener('click', () => {   // 點擊btn-Resetpassword
+        showPopup(resetsuccessBox);
+    });
+    loginnowButton.addEventListener('click', () => {   // 點擊btn-Login now
+        showPopup(loginBox);
+    });
+    backButton.forEach(button => {   // 點擊返回箭頭
+        button.addEventListener('click', () => {
+            goBack();
+        });
+    });
+
+    showPopup(loginBox);   // 初始化並加入歷史
+    </script>
 </body>
 </html> 
