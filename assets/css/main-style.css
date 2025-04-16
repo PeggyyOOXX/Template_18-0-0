@@ -1186,6 +1186,20 @@ img {width: 100%;}
         display: none;
     }
 }
+@media (max-width: 1023px){
+    .affiliate-programBox img {
+        width: 120px;
+    }
+    .program-directionBox{
+        padding: 5px;
+    }
+    .program-title {
+        font-size: 20px;
+    }
+    .program-content {
+        font-size: 12px;
+    }
+}
 @media (max-width: 767px) {
     .affiliate-programBox{
         padding-top: 0;
@@ -1233,6 +1247,8 @@ img {width: 100%;}
         background-color: rgba(254, 240, 28, 1);
     }
 }
+
+
 .affiliate-tabBox{
     background: rgba(77, 7, 24, 1);
     border: 2px solid rgba(178, 35, 53, 1);
@@ -1255,13 +1271,63 @@ img {width: 100%;}
     background: rgba(178, 35, 53, 1);
     border-radius: 4px;
 }
+.affiliate-tabcontent{
+    padding: 0 100px;
+}
+.commissionBox{
+    margin-bottom: 20px;
+}
+.commission-title{
+    color: rgba(254, 240, 28, 1);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgba(178, 35, 53, 1);
+
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+table thead{
+    background: rgba(178, 35, 53, 1);
+}
+table tbody{
+    background: rgba(77, 7, 24, 1);
+}
+table thead th, table td {
+    padding: 8px;
+    border-right: 1px solid rgba(18, 0, 0, 1);
+    border-bottom: 1px solid rgba(18, 0, 0, 1);
+}
+table thead th:last-child, table tbody td:last-child {
+    border-right: 0;
+}
+tr:last-child td {
+    border-bottom: 0;
+}
+
+@media (max-width: 1023px){
+    .affiliate-tabBox{
+        width: 70%;
+    }
+}
 @media screen and (max-width: 767px){
     .affiliate-tabBox{
         width: 100%;
         font-size: 16px;
+        margin: 15px 0;
     }
     .affiliate-tab{
         padding: 8px;
+    }
+    .affiliate-tabcontent{
+        padding: 0;
     }
 }
 
