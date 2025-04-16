@@ -81,6 +81,14 @@ img {width: 100%;}
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 1px;
 }
+/* nav */
+.nav-pills .nav-link{
+    color: #fff;
+}
+.nav-pills .nav-link.active{
+    background: rgba(178, 35, 53, 1);
+    border-radius: 4px;
+}
 /*--------------------------------------------------------------------------------------------------------------*/
 /* Header */
 .header {
@@ -310,11 +318,7 @@ img {width: 100%;}
 .bannerBox{
     padding: 0;
 }
-.bannerimg{
-    background: url(../img/banner/Banner_PC.webp) center no-repeat;
-    height: 450px;
-}
-.homecontentBox{
+.home-contentBox{
     padding: 10px 20px;
 }
 /* marquee */
@@ -558,7 +562,7 @@ img {width: 100%;}
         background: url(../img/banner/Banner_MOB.webp) center no-repeat;
         height: 160px;
     }
-    .homecontentBox{
+    .home-contentBox{
         padding: 10px;
     }
     .marqueeBox{
@@ -1002,6 +1006,9 @@ img {width: 100%;}
     padding: 20px;
     padding-top: 40px;
 }
+.promotiontabbtnBox{
+    display: flex;
+}
 .promotion-tabBox{
     background: rgba(77, 7, 24, 1);
     border-radius: 8px;
@@ -1018,7 +1025,6 @@ img {width: 100%;}
     color: #fff;
     background: none;
     border: none;
-
 }
 .promotion-tab.active{
     background: rgba(178, 35, 53, 1);
@@ -1050,6 +1056,9 @@ img {width: 100%;}
     width: 20px;
     height: auto;
 }
+.promotion-listBox{
+    margin-top: 16px;
+}
 .promotion-cardBox{
     border: 1px solid rgba(178, 35, 53, 1);
     border-radius: 16px;
@@ -1073,8 +1082,188 @@ img {width: 100%;}
     color: #fff;
     line-height: 16px;
 }
+@media screen and (max-width: 767px){
+    .promotionBox{
+        padding: 10px 0;
+    }
+    .promotiontabbtnBox {
+        flex-direction: column;
+        padding: 0 12px;
+    }
+    .promotion-searchBox {
+        order: 1;
+        margin-bottom: 10px;
+    }
+    .promotion-tabBox {
+        order: 2;
+        padding: 4px;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .promotion-listBox{
+        margin-top: 0px;
+    }
+    .promotion-tab{
+        font-size: 12px;
+        padding: 5px;
+    }
+    .promotion-searchBox {
+        padding: 4px;
+        margin: 0px;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .promotion-searchBox input{
+        font-size: 12px;
+    }
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+/* affiliate */
+.affiliate-contentBox{
+    padding: 10px 20px;
+}
+.affiliate-programBox{
+    padding-top: 60px;
+}
+.program-directionBox{
+    height: 130px;
+    border-top-left-radius: 46px;
+    border-top-right-radius: 46px;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+.programdirectionBox1{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 0, 0, 0.5) 80%);
+    border: 1px solid rgba(255, 0, 0, 1);
+    border-bottom: 10px solid rgba(255, 0, 0, 1);
 
-
+}
+.programdirectionBox2{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 132, 255, 0.5) 80%);
+    border: 1px solid rgba(0, 132, 255, 1);
+    border-bottom: 10px solid rgba(0, 132, 255, 1);
+}
+.programdirectionBox3{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 246, 0, 0.5) 80%);
+    border: 1px solid rgba(255, 246, 0, 1);
+    border-bottom: 10px solid rgba(255, 246, 0, 1);
+}
+.affiliate-programBox img {
+    width: 180px;
+    height: auto;
+    position: relative;
+    top: -20px;
+}
+.program-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.program-content {
+    color: #fff;
+}
+@media (min-width: 768px) {
+    .affiliate-programBox {
+        display: block;
+    }
+    .program-carousel .program-track {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 16px;
+    }
+    .program-directionBox {
+        flex: 1;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .affiliate-programBox{
+        padding-top: 0;
+    }
+    .program-carousel {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    .program-track {
+        display: flex;
+        padding-top: 40px;
+    }
+    .program-directionBox {
+        min-width: 100%;
+        height: 92px;
+        border-top-left-radius: 32px;
+        border-top-right-radius: 32px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+    .affiliate-programBox img {
+        width: 128px;
+    }
+    .program-title {
+        font-size: 22px;
+    }
+    .program-content {
+        font-size: 12px;
+    }
+    .carousel-indicators {
+        position: unset;
+        margin: 0;
+        margin-top: 10px;
+    }
+    .indicator {
+        width: 6px;
+        height: 6px;
+        background-color: rgba(217, 217, 217, 1);
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    .indicator.active {
+        background-color: rgba(254, 240, 28, 1);
+    }
+}
+.affiliate-tabBox{
+    background: rgba(77, 7, 24, 1);
+    border: 2px solid rgba(178, 35, 53, 1);
+    border-radius: 8px;
+    padding: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    font-size: 20px;
+    width: 25%;
+}
+.affiliate-tab{
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    background: none;
+    width: 50%;
+}
+.affiliate-tab.active{
+    background: rgba(178, 35, 53, 1);
+    border-radius: 4px;
+}
+@media screen and (max-width: 767px){
+    .affiliate-tabBox{
+        width: 100%;
+        font-size: 16px;
+    }
+    .affiliate-tab{
+        padding: 8px;
+    }
+}
 
 
 
