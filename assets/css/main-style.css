@@ -26,7 +26,7 @@ img {width: 100%;}
 .btn-primary{
     background: linear-gradient(180deg, #FF0004, #A30003);
     border: 1px solid rgba(255, 0, 19, 1);
-    border-radius: 20px;
+    border-radius: 8px;
     font-weight: 700;
 }
 .btn-primary:hover{
@@ -88,6 +88,34 @@ img {width: 100%;}
 .nav-pills .nav-link.active{
     background: rgba(178, 35, 53, 1);
     border-radius: 4px;
+}
+/* table */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgba(178, 35, 53, 1);
+
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+table thead{
+    background: rgba(178, 35, 53, 1);
+}
+table tbody{
+    background: rgba(77, 7, 24, 1);
+}
+table thead th, table td {
+    padding: 8px;
+    border-right: 1px solid rgba(18, 0, 0, 1);
+    border-bottom: 1px solid rgba(18, 0, 0, 1);
+}
+table thead th:last-child, table tbody td:last-child {
+    border-right: 0;
+}
+tr:last-child td {
+    border-bottom: 0;
 }
 /*--------------------------------------------------------------------------------------------------------------*/
 /* Header */
@@ -517,7 +545,6 @@ img {width: 100%;}
 }
 /* footer */
 .footer{
-    margin-top: 30px;
     background: linear-gradient(90deg, #3E0613 0%, #67122B 50%, #3E0613 100%);
     border-top: 1px solid rgba(254, 240, 28, 1);
     padding: 16px;
@@ -843,7 +870,7 @@ img {width: 100%;}
 /*--------------------------------------------------------------------------------------------------------------*/
 /* login/register main */
 .loginregister .main-content{
-    background-image: url(../img/loginregisterBG.png);
+    background-image: url(../img/background/loginregisterBG.png);
     height: calc(100vh - 100px);
 }
 .loginregister-popupBox{
@@ -1247,8 +1274,6 @@ img {width: 100%;}
         background-color: rgba(254, 240, 28, 1);
     }
 }
-
-
 .affiliate-tabBox{
     background: rgba(77, 7, 24, 1);
     border: 2px solid rgba(178, 35, 53, 1);
@@ -1282,36 +1307,61 @@ img {width: 100%;}
     font-size: 24px;
     font-weight: 700;
 }
-
-
-table{
-    width: 100%;
-    border-collapse: collapse;
+.accordion-item{
     border: 1px solid rgba(178, 35, 53, 1);
-
-    border-collapse: separate;
-    border-spacing: 0;
-    border-radius: 8px;
-    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    background: none;
 }
-table thead{
+.accordion-button{
+    border-radius: 16px;
+}
+.faq-accordion{
+    margin-bottom: 25px;
+}
+.faq-title{
+    color: rgba(254, 240, 28, 1);
+    font-size: 24px;
+    font-weight: 700;
+}
+.accordion-button{
     background: rgba(178, 35, 53, 1);
+    color: #fff;
+    padding: 10px 16px;
+    font-weight: 700;
+    height: 56px;
 }
-table tbody{
-    background: rgba(77, 7, 24, 1);
+.accordion-button:not(.collapsed){
+    background: rgba(178, 35, 53, 1);
+    color: #fff;
+    box-shadow: none;
 }
-table thead th, table td {
-    padding: 8px;
-    border-right: 1px solid rgba(18, 0, 0, 1);
-    border-bottom: 1px solid rgba(18, 0, 0, 1);
+.accordion-button::after{
+    background: rgba(18, 0, 0, 1);
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    border-radius: 50%;
+    background-image: url('../img/icon/arrowbg_down.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
-table thead th:last-child, table tbody td:last-child {
-    border-right: 0;
+.accordion-button:not(.collapsed)::after{
+    background-image: url('../img/icon/arrow-down.png');
 }
-tr:last-child td {
-    border-bottom: 0;
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed{
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
 }
-
+.accordion-item:last-of-type{
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.accordion-body{
+    color: #fff;
+}
 @media (max-width: 1023px){
     .affiliate-tabBox{
         width: 70%;
@@ -1329,14 +1379,75 @@ tr:last-child td {
     .affiliate-tabcontent{
         padding: 0;
     }
+    .faq-title{
+        font-size: 16px;
+    }
+    .accordion-button{
+        height: 48px;
+        font-size: 12px;
+    }
+    .accordion-button::after{
+        width: 30px;
+        height: 30px;
+        background-size: 15px 15px;
+    }
 }
-
-
-
-
-
-
-
+/*--------------------------------------------------------------------------------------------------------------*/
+/* game lobby */
+.gamelobbyBox{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-height: auto;
+    width: 100%;
+}
+.cockfighting .gamelobbyBox{
+    background-image: url(../img/background/cockfightingBG.png);
+}
+.livecasino .gamelobbyBox{
+    background-image: url(../img/background/livecasinoBG.png);
+}
+.gamelobbyBox .row {
+    display: flex;
+    align-items: center;
+    height: calc(100% - 100px);
+}
+.gameentrance-text{
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 30px;
+    padding: 0 12px;
+}
+.btn-entergame{
+    width: 100%;
+    background: linear-gradient(90deg, #3E0613 0%, #67122B 50%, #3E0613 100%);
+    border: 1px solid rgba(178, 35, 53, 1);
+    border-radius: 16px;
+    padding: 20px 10px;
+    margin-bottom: 8px;
+}
+.btn-entergame:hover{
+    background: linear-gradient(90deg, #3E0613 0%, #FF001B 50%, #3E0613 100%);
+}
+.btn-entergame img{
+    width: 60%;
+}
+@media screen and (max-width: 767px){
+    .gamelobbyBox{
+        padding-bottom: 20px;
+    }
+    .gamelobbyBox .row {
+        height: auto;
+    }
+    .gameentranceimgBox{
+        margin-top: 30px;
+    }
+    .gameentrance-text{
+        font-size: 24px;
+        text-align: center;
+    }
+}
 
 
 
