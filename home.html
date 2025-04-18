@@ -993,5 +993,22 @@
 
 
     <script src="./assets/js/layout.js"></script>
+    <script>
+    //遊戲快選區塊滑入效果
+    document.querySelectorAll('.gameroomlink').forEach(link => {
+        link.addEventListener('mouseenter', () => {
+            document.querySelectorAll('.gameroomlink').forEach(other => {
+                if (other !== link) {
+                    other.classList.add('dimmed');
+                }
+            });
+        });
+        link.addEventListener('mouseleave', () => {
+            document.querySelectorAll('.gameroomlink').forEach(other => {
+                other.classList.remove('dimmed');
+            });
+        });
+    });
+    </script>
 </body>
 </html> 
