@@ -382,9 +382,13 @@ tr:last-child td {
     flex: 1;
     text-align: center;
     text-decoration: none;
+    transition: 0.3s ease;
 }
 .gameroomlink:hover {
     filter:drop-shadow(0px 0px 10px rgba(255, 255, 255, .5));
+}
+.gameroomlink.dimmed {
+    filter: brightness(0.3);
 }
 .gameroomlink img {
     display: block;
@@ -1408,6 +1412,18 @@ tr:last-child td {
 .livecasino .gamelobbyBox{
     background-image: url(../img/background/livecasinoBG.png);
 }
+.lottery .gamelobbyBox{
+    background-image: url(../img/background/lotteryBG.png);
+}
+.sports .gamelobbyBox{
+    background-image: url(../img/background/sportsBG.png);
+}
+.board .gamelobbyBox{
+    background-image: url(../img/background/boardBG.png);
+}
+.esports .gamelobbyBox{
+    background-image: url(../img/background/esportsBG.png);
+}
 .gamelobbyBox .row {
     display: flex;
     align-items: center;
@@ -1441,7 +1457,7 @@ tr:last-child td {
         height: auto;
     }
     .gameentranceimgBox{
-        margin-top: 30px;
+        margin-top: 20px;
     }
     .gameentrance-text{
         font-size: 24px;
