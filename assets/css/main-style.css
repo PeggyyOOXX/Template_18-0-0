@@ -117,6 +117,70 @@ table thead th:last-child, table tbody td:last-child {
 tr:last-child td {
     border-bottom: 0;
 }
+/* tab */
+.tabBox{
+    background: rgba(77, 7, 24, 1);
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    list-style: none;
+}
+.tab-option {
+    padding: 5px 8px;
+    margin: 0 3px;
+    color: #fff;
+    background: none;
+    border: none;
+}
+.tab-option.active {
+    background: rgba(178, 35, 53, 1);
+    border-radius: 4px;
+}
+@media screen and (max-width: 767px){
+    .tab-option {
+        font-size: 10px;
+        padding: 5px;
+    }
+}
+/* search box */
+.searchBox {
+    display: flex;
+    align-items: center;
+    background: rgba(77, 7, 24, 1);
+    border-radius: 8px;
+    padding: 8px 16px;
+    gap: 8px;
+}
+.searchBox input{
+    flex: 1;
+    min-width: 0;   /* 阻止撐爆 */
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 8px;
+}
+.searchBox input::placeholder{
+    color: rgba(255, 255, 255, .5);
+}
+.searchBox .searchicon{
+    width: 20px;
+    height: auto;
+}
+@media screen and (max-width: 767px){
+    .searchBox {
+        padding: 4px;
+        margin: 0px;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .searchBox input{
+        font-size: 12px;
+    }
+}
 /*--------------------------------------------------------------------------------------------------------------*/
 /* Header */
 .header {
@@ -1039,16 +1103,8 @@ tr:last-child td {
 }
 .promotiontabbtnBox{
     display: flex;
-}
-.promotion-tabBox{
-    background: rgba(77, 7, 24, 1);
-    border-radius: 8px;
-    padding: 8px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 0;
-    margin-left: 10px;
-    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px ;
 }
 .promotion-tab{
     padding: 5px 8px;
@@ -1056,36 +1112,6 @@ tr:last-child td {
     color: #fff;
     background: none;
     border: none;
-}
-.promotion-tab.active{
-    background: rgba(178, 35, 53, 1);
-    border-radius: 4px;
-}
-.promotion-searchBox {
-    display: flex;
-    align-items: center;
-    background: rgba(77, 7, 24, 1);
-    border-radius: 8px;
-    padding: 8px 16px;
-    gap: 8px;
-    margin-right: 10px;
-}
-.promotion-searchBox input{
-    flex: 1;
-    min-width: 0;   /* 阻止撐爆 */
-    background: transparent;
-    border: none;
-    outline: none;
-    color: #fff;
-    font-size: 16px;
-    padding: 5px 8px;
-}
-.promotion-searchBox input::placeholder{
-    color: rgba(255, 255, 255, .5);
-}
-.promotion-searchBox .searchicon{
-    width: 20px;
-    height: auto;
 }
 .promotion-listBox{
     margin-top: 16px;
@@ -1139,15 +1165,6 @@ tr:last-child td {
     .promotion-tab{
         font-size: 12px;
         padding: 5px;
-    }
-    .promotion-searchBox {
-        padding: 4px;
-        margin: 0px;
-        margin-bottom: 5px;
-        width: 100%;
-    }
-    .promotion-searchBox input{
-        font-size: 12px;
     }
 }
 /*--------------------------------------------------------------------------------------------------------------*/
@@ -1398,6 +1415,9 @@ tr:last-child td {
 }
 /*--------------------------------------------------------------------------------------------------------------*/
 /* game lobby */
+.gameentranceBox{
+    padding: 10px 20px;
+}
 .gamelobbyBox{
     background-position: center center;
     background-size: cover;
@@ -1449,6 +1469,33 @@ tr:last-child td {
 .btn-entergame img{
     width: 60%;
 }
+.gameentrance-headerBox{
+    display: flex;
+}
+.gameentrance-headerright{
+    display: flex;
+}
+.providerselectbtn {
+    display: flex;
+    align-items: center;
+    background: rgba(77, 7, 24, 1);
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 16px;
+    gap: 8px;
+    margin-left: 10px;
+}
+.providerselectbtn .sortingicon{
+    width: 20px;
+    height: auto;
+}
+.slots .game-imgBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+}
 @media screen and (max-width: 767px){
     .gamelobbyBox{
         padding-bottom: 20px;
@@ -1462,6 +1509,37 @@ tr:last-child td {
     .gameentrance-text{
         font-size: 24px;
         text-align: center;
+    }
+    .gameentrance-headerBox {
+        flex-direction: column;
+        padding: 0;
+    }
+    .gameentrance-headerright {
+        order: 1;
+        margin-bottom: 5px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .gameentrance-tabBox {
+        order: 2;
+        padding: 4px;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .providerselectbtn{
+        font-size: 12px;
+        padding: 9px;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .slots .game-imgBox .game-entranceimgBox{
+        width: 30%;
+    }
+    .slots .game-imgBox .game-entranceimgBox img {
+        width: 100%;
     }
 }
 
