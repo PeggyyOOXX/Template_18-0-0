@@ -1489,7 +1489,7 @@ tr:last-child td {
     width: 20px;
     height: auto;
 }
-.slots .game-imgBox {
+.slots .game-imgBox, .fishing .game-imgBox {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -1534,10 +1534,10 @@ tr:last-child td {
         margin-bottom: 5px;
         width: 100%;
     }
-    .slots .game-imgBox .game-entranceimgBox{
+    .slots .game-imgBox .game-entranceimgBox, .fishing .game-imgBox .game-entranceimgBox{
         width: 30%;
     }
-    .slots .game-imgBox .game-entranceimgBox img {
+    .slots .game-imgBox .game-entranceimgBox img, .fishing .game-imgBox .game-entranceimgBox img {
         width: 100%;
     }
 }
