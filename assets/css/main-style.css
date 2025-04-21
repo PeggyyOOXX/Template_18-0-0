@@ -36,7 +36,7 @@ img {width: 100%;}
 .btn-secondary{
     background: linear-gradient(180deg, #FFF21C, #F9A410);
     border: 1px solid rgba(254, 240, 28, 1);
-    border-radius: 20px;
+    border-radius: 8px;
     font-weight: 700;
     color: rgba(18, 0, 0, 1);
 }
@@ -48,7 +48,7 @@ img {width: 100%;}
 .btn-secondary-border{
     background: none;
     border: 1px solid rgba(254, 240, 28, 1);
-    border-radius: 20px;
+    border-radius: 8px;
     font-weight: 700;
     color: rgba(254, 240, 28, 1);
 }
@@ -194,7 +194,6 @@ tr:last-child td {
 .header .btn-primary, .header .btn-secondary, .header .btn-secondary-border {
     height: 48px;
     width: 160px;
-    border-radius: 25px;
     margin: 0 5px;
 }
 .btn-dropdown-lang{
@@ -1541,6 +1540,67 @@ tr:last-child td {
     .slots .game-imgBox .game-entranceimgBox img {
         width: 100%;
     }
+}
+
+
+.membercenter{
+    height: calc(100vh - 100px);
+}
+.member-contentBox{
+    height: 600px;
+    width: 1200px;
+    margin-top: 0;
+}
+.member-contentBox .row{
+    height: 100%;
+}
+.member-leftbarBox{
+    background: rgba(112, 10, 35, 1);
+    border-radius: 8px;
+    height: 100%;
+}
+.member-profileBox{
+    padding: 16px;
+}
+.member-levelimg{
+    position: relative;
+    text-align: center;
+}
+.member-levelimg img{
+    width: 40px;
+    height: auto;  
+}
+.member-levelimg .viplevelimg-num{
+    position: absolute;
+    font-size: 10px;
+    top: 10px;
+    left: 17px;
+}
+.member-leveltext{
+    font-weight: 900;
+    color: #FF0004;
+    text-shadow: -1px -1px 0 #FFF21C,  1px -1px 0 #FFF21C,  -1px  1px 0 #FFF21C, 1px  1px 0 #FFF21C;
+    margin-left: 10px;
+}
+.member-userimg img{
+    width: 100px;
+    height: auto;
+}
+.member-balance{
+    font-weight: 700;
+    color: rgba(254, 240, 28, 1);
+}
+.member-pagetabBox .nav-link.active{
+    background: linear-gradient(0deg, #D61343, #D61343);
+}
+
+
+
+.member-tabcontentBox{
+    background: rgba(77, 7, 24, 1);
+    border: 1px solid rgba(178, 35, 53, 1);
+    border-radius: 8px;
+    height: 100%;
 }
 
 
