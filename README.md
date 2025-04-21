@@ -3,6 +3,7 @@
 /board.html <br>
 /cockfighting.html <br>
 /esports.html <br>
+/fishing.html <br>
 /home.html <br>
 /livecasino.html <br>
 /loginregister.html <br>
