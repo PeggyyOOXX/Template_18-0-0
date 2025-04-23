@@ -21,6 +21,13 @@ img {width: 100%;}
 a{
     color: #fff;
 }
+.row>* {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.yellowtext{
+    color: rgba(254, 240, 28, 1)!important;
+}
 /* Button */
 .btn{
     border: none;
@@ -241,7 +248,6 @@ tr:last-child td {
 }
 .btn-gamewallet{
     background: rgba(178, 35, 53, 1);
-    color: rgba(254, 240, 28, 1);
     font-weight: 700;
     border-radius: 16px;
     height: 48px;
@@ -354,7 +360,6 @@ tr:last-child td {
     padding: 10px;
 }
 .pagelink-title{
-    color: rgba(254, 240, 28, 1);
     font-weight: 700;
 }
 .pagelink-button{
@@ -499,7 +504,6 @@ tr:last-child td {
     margin-right: 10px;
 }
 .gameblock-text{
-    color: rgba(254, 240, 28, 1);
     font-size: 24px;
     font-weight: 700;
 }
@@ -630,7 +634,6 @@ tr:last-child td {
     padding: 16px;
 }
 .footer-blocktitle{
-    color: rgba(254, 240, 28, 1);
     font-weight: 600;
     margin: 15px 0;
 }
@@ -779,9 +782,6 @@ tr:last-child td {
     font-size: 20px;
     color: #fff;
 }
-.notifypopup-time{
-    color: rgba(254, 240, 28, 1);
-}
 @media screen and (max-width: 767px){
     .notify-popupBox{
         width: 95%;
@@ -811,7 +811,6 @@ tr:last-child td {
 }
 .playerpopup-balance{
     font-weight: 700;
-    color: rgba(254, 240, 28, 1);
 }
 .btn-logout{
     border: 1px solid rgba(254, 240, 28, 1);
@@ -820,7 +819,6 @@ tr:last-child td {
 }
 .btn-logout:hover{
     background: rgba(18, 0, 0, 1);
-    color: rgba(254, 240, 28, 1);
 }
 .btn-logout img{
     height: 16px;
@@ -852,7 +850,6 @@ tr:last-child td {
     text-shadow: -1px -1px 0 #FFF21C,  1px -1px 0 #FFF21C,  -1px  1px 0 #FFF21C, 1px  1px 0 #FFF21C;
 }
 .playerpopup-levelnote{
-    color: rgba(254, 240, 28, 1);
     font-weight: 700;
     margin-right: 10px;
 }
@@ -891,9 +888,6 @@ tr:last-child td {
     height: auto;
     margin-right: 15px;
 }
-.walletpopup-totalbalance{
-    color: rgba(254, 240, 28, 1);
-}
 .walletpopup-gamecateBox{
     background: rgba(18, 0, 0, 1);
     padding: 16px;
@@ -906,7 +900,6 @@ tr:last-child td {
     height: auto;
 }
 .walletpopup-gamebalance{
-    color: rgba(254, 240, 28, 1);
     font-weight: 700;
 }
 .btn-refreshbalance{
@@ -939,7 +932,6 @@ tr:last-child td {
 }
 .mobileplayer-balance{
     font-weight: 700;
-    color: rgba(254, 240, 28, 1);
     gap: 3px;
 }
 .mobileplayer-balance img{
@@ -974,7 +966,6 @@ tr:last-child td {
     padding-left: 0;
 }
 .lr-popuptitle{
-    color: rgba(254, 240, 28, 1);
     font-size: 32px;
     font-weight: 700;
 }
@@ -985,7 +976,6 @@ tr:last-child td {
     font-size: 20px;
 }
 .lr-inputrequired{
-    color: rgba(254, 240, 28, 1);
     font-size: 20px;
 }
 .lr-inputcontent {
@@ -1015,7 +1005,6 @@ tr:last-child td {
     font-size: 12px;
 }
 .lr-inputforgot{
-    color: rgba(254, 240, 28, 1);
     text-decoration: underline;
     display: block;
     text-align: end;
@@ -1082,17 +1071,14 @@ tr:last-child td {
     margin-top: 16px;
 }
 .lr-directionslogin{
-    color: rgba(254, 240, 28, 1);
     text-decoration: underline;
     cursor: pointer;
 }
 .lr-verifycountdown{
-    color: rgba(254, 240, 28, 1);
     font-size: 24px;
     font-weight: 600;
 }
 .lr-resendotp{
-    color: rgba(254, 240, 28, 1);
     text-decoration: underline;
     cursor: pointer;
 }
@@ -1144,7 +1130,6 @@ tr:last-child td {
     padding: 16px;
 }
 .promotion-texttitle{
-    color: rgba(254, 240, 28, 1);
     font-weight: 700;
     font-size: 24px;
 }
@@ -1337,7 +1322,6 @@ tr:last-child td {
     margin-bottom: 20px;
 }
 .commission-title{
-    color: rgba(254, 240, 28, 1);
     font-size: 24px;
     font-weight: 700;
 }
@@ -1354,7 +1338,6 @@ tr:last-child td {
     margin-bottom: 25px;
 }
 .faq-title{
-    color: rgba(254, 240, 28, 1);
     font-size: 24px;
     font-weight: 700;
 }
@@ -1602,17 +1585,6 @@ tr:last-child td {
 }
 .member-balance{
     font-weight: 700;
-    color: rgba(254, 240, 28, 1);
-}
-.btn-checkin{
-    background: linear-gradient(90deg, #3E0613 0%, #67122B 50%, #3E0613 100%);
-    border-radius: 0;
-    line-height: 16px;
-    margin-bottom: 16px;
-}
-.btn-checkin img{
-    height: 32px;
-    width: auto;
 }
 .member-pagetabBox .nav-link{
     margin: 6px 0;
@@ -1683,7 +1655,6 @@ tr:last-child td {
     padding: 8px;
 }
 .memberinfo-title{
-    color: rgba(254, 240, 28, 1);
     font-size: 20px;
     font-weight: 700;
     border-bottom: 1px solid rgba(254, 240, 28, 1);
@@ -1697,9 +1668,6 @@ tr:last-child td {
 .memberinfocell{
     border-bottom: 1px solid rgba(178, 35, 53, .5);
     padding: 8px;
-}
-.memberinfocell span:nth-child(2){
-    color: rgba(254, 240, 28, 1);
 }
 .membervip-imgBox{
     position: relative;
@@ -1720,9 +1688,16 @@ tr:last-child td {
     margin-left: 10px;
 }
 .member-rebatenum{
-    color: rgba(254, 240, 28, 1);
     font-weight: 700;
     font-size: 20px;
+}
+.btn-vipclub, .btn-checkin{
+    border-radius: 0;
+    line-height: 16px;
+}
+.btn-vipclub img, .btn-checkin img{
+    height: 32px;
+    width: auto;
 }
 @media screen and (max-width: 767px) {
     .membercenter{
