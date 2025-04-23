@@ -14,28 +14,26 @@
 <body>
     <div class="loginregister">
         <!-- Header -->
-        <div class="header fixed-top d-flex align-items-center justify-content-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-3 pe-0 header-logo">
-                        <img src="./assets/img/101logo.png" class="PChide">
-                    </div>
-                    <!--not login-->
-                    <div class="col-9 text-end px-0 align-items-center justify-content-end">
-                        <button class="btn btn-primary">Login</button>
-                        <button class="btn btn-secondary">Register</button>
+        <div class="header fixed-top d-flex align-items-center justify-content-between">
+            <div class="pe-0 header-logo">
+                <img src="./assets/img/101logo.png" class="PChide">
+            </div>
+            <div class="d-flex align-items-center justify-content-end">
+                <!--not login-->
+                <div class="text-end px-0 align-items-center">
+                    <button class="btn btn-primary">Login</button>
+                    <button class="btn btn-secondary">Register</button>
+                </div>
 
-                        <div class="dropdown dropdownlangBox">
-                            <button class="btn dropdown-toggle btn-dropdown-lang px-1" data-bs-toggle="dropdown" data-bs-display="static">
-                                <img src="./assets/img/icon/en.png">
-                            </button>
-                            <ul class="dropdown-menu dropdown-lang-menu">
-                                <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/en.png"><span>English</span></button></li>
-                                <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/vn.png"><span>Tiếng Việt</span></button></li>
-                                <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/ph.png"><span>Pilipino</span></button></li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="dropdown dropdownlangBox align-items-center">
+                    <button class="btn dropdown-toggle btn-dropdown-lang px-1" data-bs-toggle="dropdown" data-bs-display="static">
+                        <img src="./assets/img/icon/en.png">
+                    </button>
+                    <ul class="dropdown-menu dropdown-lang-menu">
+                        <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/en.png"><span>English</span></button></li>
+                        <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/vn.png"><span>Tiếng Việt</span></button></li>
+                        <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/cn.png"><span>简体中文</span></button></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -46,11 +44,11 @@
             <div class="loginregister-popupBox loginBox">
                 <div class="lr-popuptitleBox d-flex">
                     <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
-                    <div class="lr-popuptitle">Login</div>
+                    <div class="lr-popuptitle yellowtext">Login</div>
                 </div>
                 <div class="lr-inputBox">
                     <span class="lr-inputtitle">Phone number</span>
-                    <span class="lr-inputrequired">*</span>
+                    <span class="lr-inputrequired yellowtext">*</span>
                     <div class="lr-inputcontent">
                         <img src="./assets/img/icon/icon-phone.png" class="inputicon">
                         <input placeholder="Enter your phone number">
@@ -59,14 +57,14 @@
                 </div>
                 <div class="lr-inputBox">
                     <span class="lr-inputtitle">Password</span>
-                    <span class="lr-inputrequired">*</span>
+                    <span class="lr-inputrequired yellowtext">*</span>
                     <div class="lr-inputcontent">
                         <img src="./assets/img/icon/icon-locked.png" class="inputicon">
                         <input placeholder="Enter your password">
                         <img src="./assets/img/icon/icon-eyeclose.png" class="inputicon">
                         <img src="./assets/img/icon/icon-eyeopen.png" class="inputicon" style="display: none;">
                     </div>
-                    <span class="lr-inputforgot">Forgot password?</span>
+                    <span class="lr-inputforgot yellowtext">Forgot password?</span>
                 </div>
                 <div class="lr-enterbtnBox">
                     <button class="btn btn-primary">Login</button>
@@ -81,11 +79,11 @@
             <div class="loginregister-popupBox registerBox" style="display: none;">
                 <div class="lr-popuptitleBox d-flex">
                     <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
-                    <div class="lr-popuptitle">Register</div>
+                    <div class="lr-popuptitle yellowtext">Register</div>
                 </div>
                 <div class="lr-inputBox">
                     <span class="lr-inputtitle">Phone number</span>
-                    <span class="lr-inputrequired">*</span>
+                    <span class="lr-inputrequired yellowtext">*</span>
                     <div class="lr-inputcontent">
                         <img src="./assets/img/icon/icon-phone.png" class="inputicon">
                         <input placeholder="Enter your phone number">
@@ -94,7 +92,7 @@
                 </div>
                 <div class="lr-inputBox">
                     <span class="lr-inputtitle">Password</span>
-                    <span class="lr-inputrequired">*</span>
+                    <span class="lr-inputrequired yellowtext">*</span>
                     <div class="lr-inputcontent">
                         <img src="./assets/img/icon/icon-locked.png" class="inputicon">
                         <input placeholder="Enter your password">
@@ -105,7 +103,7 @@
                 </div>
                 <div class="lr-inputBox">
                     <span class="lr-inputtitle">Confirm password</span>
-                    <span class="lr-inputrequired">*</span>
+                    <span class="lr-inputrequired yellowtext">*</span>
                     <div class="lr-inputcontent">
                         <img src="./assets/img/icon/icon-locked.png" class="inputicon">
                         <input placeholder="Confirm your password">
@@ -116,11 +114,11 @@
                 </div>
                 <div class="lr-inputBox">
                     <span class="lr-inputtitle">Verification Code</span>
-                    <span class="lr-inputrequired">*</span>
+                    <span class="lr-inputrequired yellowtext">*</span>
                     <div class="lr-inputcontent">
                         <img src="./assets/img/icon/icon-verify.png" class="inputicon">
                         <input placeholder="Verification code">
-                        <img src="./assets/img/icon/verificationcode.png" class="verifycodeimg">
+                        <img src="./assets/img/figure/verificationcode.png" class="verifycodeimg">
                     </div>
                 </div>
                 <div class="lr-inputBox">
@@ -134,7 +132,7 @@
                     <button class="btn btn-primary">Register</button>
                 </div>
                 <div class="lr-directions text-center">
-                    <span>Already have an account? <span class="lr-directionslogin">Login now</span></span>
+                    <span>Already have an account? <span class="lr-directionslogin yellowtext">Login now</span></span>
                 </div>
             </div>
 
@@ -142,7 +140,7 @@
             <div class="loginregister-popupBox resetpasswordBox" style="display: none;">
                 <div class="lr-popuptitleBox d-flex">
                     <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
-                    <div class="lr-popuptitle">Reset password</div>
+                    <div class="lr-popuptitle yellowtext">Reset password</div>
                 </div>
                 <div class="lr-directions text-center">
                     <span>Please enter your phone number to receive the OTP verification code.</span>
@@ -163,7 +161,7 @@
             <div class="loginregister-popupBox enterotpBox" style="display: none;">
                 <div class="lr-popuptitleBox d-flex">
                     <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
-                    <div class="lr-popuptitle">Reset password</div>
+                    <div class="lr-popuptitle yellowtext">Reset password</div>
                 </div>
                 <div class="lr-directions text-center">
                     <span>Please enter the OTP.</span>
@@ -175,10 +173,10 @@
                 </div>
                 
                 <div class="lr-directions text-center">
-                    <span class="lr-verifycountdown">0:59</span>
+                    <span class="lr-verifycountdown yellowtext">0:59</span>
                 </div>
                 <div class="lr-directions text-center">
-                    <span>Haven't received it yet? <span class="lr-resendotp">Resend OTP</span></span>
+                    <span>Haven't received it yet? <span class="lr-resendotp yellowtext">Resend OTP</span></span>
                 </div>
                 <div class="lr-enterbtnBox">
                     <button class="btn btn-primary btn-verifyotp">Verify</button>
@@ -189,7 +187,7 @@
             <div class="loginregister-popupBox newpasswordBox" style="display: none;">
                 <div class="lr-popuptitleBox d-flex">
                     <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
-                    <div class="lr-popuptitle">Reset password</div>
+                    <div class="lr-popuptitle yellowtext">Reset password</div>
                 </div>
                 <div class="lr-directions text-center">
                     <span>Enter your new password</span>
@@ -208,10 +206,10 @@
             <!-- Reset password success -->
             <div class="loginregister-popupBox resetsuccessBox" style="display: none;">
                 <div class="lr-popuptitleBox d-flex">
-                    <div class="lr-popuptitle">Reset password</div>
+                    <div class="lr-popuptitle yellowtext">Reset password</div>
                 </div>
                 <div class="lr-directions text-center">
-                    <img src="./assets/img/icon/success.png" class="resetsuccessimg">
+                    <img src="./assets/img/figure/success.png" class="resetsuccessimg">
                 </div>
                 <div class="lr-directions text-center">
                     <span>Congratulations.<br>Your password has been reset.</span>
@@ -231,7 +229,7 @@
 
             <!-- Game Categories -->
             <div class="pagelinkBox">
-                <div class="pagelink-title">Game Categories</div>
+                <div class="pagelink-title yellowtext">Game Categories</div>
                 <button class="btn pagelink-button text-start MOBhide">
                     <img src="./assets/img/icon/home.png">
                     <span>Home</span>
@@ -272,7 +270,7 @@
 
             <!-- Account -->
             <div class="pagelinkBox">
-                <div class="pagelink-title">Account</div>
+                <div class="pagelink-title yellowtext">Account</div>
                 <button class="btn pagelink-button text-start">
                     <img src="./assets/img/icon/account.png">
                     <span>My Account</span>
@@ -289,7 +287,7 @@
             
             <!-- Others -->
             <div class="pagelinkBox pb-3">
-                <div class="pagelink-title">Others</div>
+                <div class="pagelink-title yellowtext">Others</div>
                 <button class="btn pagelink-button text-start MOBhide">
                     <img src="./assets/img/icon/support.png">
                     <span>Support</span>
