@@ -18,6 +18,9 @@ img {width: 100%;}
 .container{
     max-width: 98%;
 }
+a{
+    color: #fff;
+}
 /* Button */
 .btn{
     border: none;
@@ -186,10 +189,12 @@ tr:last-child td {
 .header {
     background: linear-gradient(90deg, #3E0613 0%, #67122B 50%, #3E0613 100%);
     height: 100px;
+    padding: 0 10px;
 }
 .header-logo{
     display: grid;
     align-items: center;
+    width: 100px;
 }
 .header .btn-primary, .header .btn-secondary, .header .btn-secondary-border {
     height: 48px;
@@ -277,8 +282,8 @@ tr:last-child td {
     }
     .header .btn-primary, .header .btn-secondary{
         height: 40px;
-        width: 100px;
-        margin: 0px;
+        width: 90px;
+        margin: 0;
     }
     .btn-dropdown-lang img{
         width: 32px;
@@ -327,7 +332,6 @@ tr:last-child td {
 .function-pagelink span{
     font-size: 12px;
 }
-
 /* Sidebar */
 .sidebar{
     background: rgba(77, 7, 24, 1);
@@ -371,6 +375,11 @@ tr:last-child td {
     width: 32px;
     margin-right: 10px;
 }
+@media (max-width: 991px){
+    .sidebar{
+        width: 200px;
+    }
+}
 @media (max-width: 767px) {
     .sidebar {
         left: auto;
@@ -394,7 +403,6 @@ tr:last-child td {
         display: block;
     }
 }
-
 /* Main Content */
 .main-content {
     margin-top: 100px;
@@ -404,6 +412,11 @@ tr:last-child td {
 .main-content .row {
     margin-right: 0;
     margin-left: 0;
+}
+@media (max-width: 991px){
+    .main-content {
+        margin-left: 200px;
+    }
 }
 /* banner */
 .bannerBox{
@@ -817,9 +830,6 @@ tr:last-child td {
 .playerpopup-viplevelBox{
     margin-top: 15px;
 }
-.playerpopup-viplevelBox a {
-    color: #fff;
-}
 .playerpopup-levelBox{
     padding: 15px;
     margin: 2px 0px;
@@ -853,7 +863,7 @@ tr:last-child td {
 .gamewallet-popupBox{
     position: fixed;
     top: 105px;
-    right: 185px;
+    right: 180px;
     background: rgba(77, 7, 24, 1);
     border: 1px solid rgba(178, 35, 53, 1);
     border-radius: 8px;
@@ -1623,23 +1633,152 @@ tr:last-child td {
     margin: 16px 30px;
     text-align: center;
 }
-
-
 .member-tabcontentBox{
     background: rgba(77, 7, 24, 1);
     border: 1px solid rgba(178, 35, 53, 1);
     border-radius: 8px;
-    height: 100%;
+    height: auto;
 }
-@media screen and (max-width: 767px){
+.member-titleBox{
+    display: flex;
+    position: relative;
+    margin: 8px 0;
+}
+.member-pagetitle{
+    font-size: 20px;
+    font-weight: 700;
+}
+/* Member Center-account */
+.account-tabBox{
+    background: rgba(77, 7, 24, 1);
+    border: 2px solid rgba(178, 35, 53, 1);
+    border-radius: 8px;
+    padding: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px;
+}
+.account-tab{
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    background: none;
+}
+.account-tab.active{
+    background: rgba(178, 35, 53, 1);
+    border-radius: 4px;
+}
+.account-tabcontent{
+    padding: 8px;
+}
+.membercenterBlock{
+    background: rgba(112, 10, 35, 1);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 8px;
+}
+.membercenterCube{
+    background: rgba(158, 57, 57, 1);
+    border-radius: 8px;
+    padding: 8px;
+}
+.memberinfo-title{
+    color: rgba(254, 240, 28, 1);
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(254, 240, 28, 1);
+    margin-bottom: 8px;
+}
+.membercenterBlock-title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.memberinfocell{
+    border-bottom: 1px solid rgba(178, 35, 53, .5);
+    padding: 8px;
+}
+.memberinfocell span:nth-child(2){
+    color: rgba(254, 240, 28, 1);
+}
+.membervip-imgBox{
+    position: relative;
+    width: 100px;
+}
+.membervip-imgBox .viplevelimg-level{
+    width: 80%;
+    height: auto;
+}
+.membervip-imgBox .viplevelimg-num{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 700;
+    top: 20px;
+    left: 44px;
+}
+.membervip-textBox{
+    margin-left: 10px;
+}
+.member-rebatenum{
+    color: rgba(254, 240, 28, 1);
+    font-weight: 700;
+    font-size: 20px;
+}
+@media screen and (max-width: 767px) {
     .membercenter{
-        height: unset;
         padding: 16px 0;
     }
     .member-contentBox{
         width: unset;
     }
+    .account-tabBox{
+        width: 100%;
+    }
+    .account-tab{
+        width: 50%;
+    }
+    .membercenterBlock{
+        padding-bottom: 32px;
+    }
 }
+
+/* 會員中心-手機版左右欄狀態 */
+@media screen and (max-width: 767px) {
+    .membercenter-left, .membercenter-right {
+        width: 100%;
+        height: auto;
+    }
+    .membercenter-left {
+        z-index: 2;
+    }
+    .membercenter-right {
+        z-index: 1;
+    }
+    .mobile-view-mode .membercenter-left {
+        display: block;
+        width: 100vw;
+    }
+    .mobile-view-mode .membercenter-right {
+        display: none;
+    }
+    .mobile-view-mode.show-pagetitle .membercenter-left {
+        display: none;
+    }
+    .mobile-view-mode.show-pagetitle .membercenter-right {
+        display: block;
+    }
+    .btn-arrow {
+        display: inline-block;
+        padding: 5px;
+        background: none;
+        border: none;
+    }
+}
+
+
+
+
+
 
 
 
