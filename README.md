@@ -8,6 +8,7 @@
 /livecasino.html <br>
 /loginregister.html <br>
 /lottery.html <br>
+/member.html<br>
 /promotion.html <br>
 /slots.html <br>
 /sports.html <br>
