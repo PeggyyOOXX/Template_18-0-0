@@ -43,7 +43,7 @@
             <!-- Login -->
             <div class="loginregister-popupBox loginBox">
                 <div class="lr-popuptitleBox d-flex">
-                    <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
+                    <button class="btn loginregister-btnarrow"><img src="./assets/img/icon/arrow-left.png"></button>
                     <div class="lr-popuptitle yellowtext fw-bold">Login</div>
                 </div>
                 <div class="lr-inputBox">
@@ -78,7 +78,7 @@
             <!-- Register -->
             <div class="loginregister-popupBox registerBox" style="display: none;">
                 <div class="lr-popuptitleBox d-flex">
-                    <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
+                    <button class="btn loginregister-btnarrow"><img src="./assets/img/icon/arrow-left.png"></button>
                     <div class="lr-popuptitle yellowtext fw-bold">Register</div>
                 </div>
                 <div class="lr-inputBox">
@@ -139,7 +139,7 @@
             <!-- Forgot password - Send OTP -->
             <div class="loginregister-popupBox resetpasswordBox" style="display: none;">
                 <div class="lr-popuptitleBox d-flex">
-                    <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
+                    <button class="btn loginregister-btnarrow"><img src="./assets/img/icon/arrow-left.png"></button>
                     <div class="lr-popuptitle yellowtext fw-bold">Reset password</div>
                 </div>
                 <div class="lr-directions text-center">
@@ -160,7 +160,7 @@
             <!-- enter OTP -->
             <div class="loginregister-popupBox enterotpBox" style="display: none;">
                 <div class="lr-popuptitleBox d-flex">
-                    <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
+                    <button class="btn loginregister-btnarrow"><img src="./assets/img/icon/arrow-left.png"></button>
                     <div class="lr-popuptitle yellowtext fw-bold">Reset password</div>
                 </div>
                 <div class="lr-directions text-center">
@@ -186,7 +186,7 @@
             <!-- enter new password -->
             <div class="loginregister-popupBox newpasswordBox" style="display: none;">
                 <div class="lr-popuptitleBox d-flex">
-                    <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
+                    <button class="btn loginregister-btnarrow"><img src="./assets/img/icon/arrow-left.png"></button>
                     <div class="lr-popuptitle yellowtext fw-bold">Reset password</div>
                 </div>
                 <div class="lr-directions text-center">
@@ -365,7 +365,7 @@
     const verifyotpButton = document.querySelector('.btn-verifyotp');
     const resetpwButton = document.querySelector('.btn-resetpw');
     const loginnowButton = document.querySelector('.btn-loginnow');
-    const backButton = document.querySelectorAll('.btn-arrow');
+    const backButton = document.querySelectorAll('.loginregister-btnarrow');
 
     let historyStack = [];   // 追蹤彈窗歷史
     function hidelrAllPopups() {   // 隱藏所有彈窗

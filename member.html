@@ -83,31 +83,31 @@
                                 </div>
 
                                 <div class="nav nav-pills flex-column member-pagetabBox" role="tablist">
-                                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#actiontab-account" type="button">
+                                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pagetab-account" type="button">
                                         <img src="./assets/img/icon/account.png">
                                         <span>Account</span>
                                     </button>
-                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#actiontab-deposit" type="button">
+                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pagetab-deposit" type="button">
                                         <img src="./assets/img/icon/deposit.png">
                                         <span>Deposit</span>
                                     </button>
-                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#actiontab-withdrawal" type="button">
+                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pagetab-withdrawal" type="button">
                                         <img src="./assets/img/icon/withdrawal.png">
                                         <span>Withdrawal</span>
                                     </button>
-                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#actiontab-bankmanagement" type="button">
+                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pagetab-bankmanagement" type="button">
                                         <img src="./assets/img/icon/bankmanage.png">
                                         <span>Bank Management</span>
                                     </button>
-                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#actiontab-transaction" type="button">
+                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pagetab-transaction" type="button">
                                         <img src="./assets/img/icon/transaction.png">
                                         <span>Transaction</span>
                                     </button>
-                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#actiontab-gamewallet" type="button">
+                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pagetab-gamewallet" type="button">
                                         <img src="./assets/img/icon/wallet.png">
                                         <span>Game Wallet</span>
                                     </button>
-                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#actiontab-resetpassword" type="button">
+                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pagetab-resetpassword" type="button">
                                         <img src="./assets/img/icon/resetpw.png">
                                         <span>Reset Password</span>
                                     </button>
@@ -122,24 +122,23 @@
                         <div class="col-12 col-md-7 col-lg-9 membercenter-right">
                             <!--page title-->
                             <div class="member-titleBox align-items-center justify-content-center PChide">
-                                <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
+                                <button class="btn btn-backleftarrow"><img src="./assets/img/icon/arrow-left.png"></button>
                                 <div class="member-pagetitle fw-bold">Account</div>
                             </div>
-
-                            <div class="member-tabcontentBox">
-                                <div class="tab-content" id="v-pills-tabContent">
-                                    <!-- Account -->
-                                    <div class="tab-pane fade show active" id="actiontab-account">
-
-                                        <div class="d-flex">
-                                            <div class="nav nav-pills account-tabBox" role="tablist">
-                                                <button class="nav-link account-tab active" data-bs-toggle="pill" data-bs-target="#Account_Personal">Personal</button>
-                                                <button class="nav-link account-tab" data-bs-toggle="pill" data-bs-target="#Account_VIPStatus">VIP status</button>
-                                            </div>
+                            
+                            <div class="tab-content">
+                                <!-- Account -->
+                                <div class="tab-pane fade show active" id="pagetab-account">
+                                    <div class="d-flex mb-2">
+                                        <div class="nav nav-pills left-tabBox" role="tablist">
+                                            <button class="nav-link member-tab-option active" data-bs-toggle="pill" data-bs-target="#Account_Personal">Personal</button>
+                                            <button class="nav-link member-tab-option" data-bs-toggle="pill" data-bs-target="#Account_VIPStatus">VIP status</button>
                                         </div>
+                                    </div>
+                                    <div class="member-tabcontentBox">
                                         <div class="tab-content">
                                             <!-- Personal -->
-                                            <div class="account-tabcontent tab-pane fade show active" id="Account_Personal">
+                                            <div class="tab-pane fade p-2 show active" id="Account_Personal">
                                                 <div class="membercenterBlock">
                                                     <div class="memberinfo-title yellowtext fw-bold">Personal Information</div>
                                                     <div class="row gx-2">
@@ -195,7 +194,7 @@
                                             </div>
 
                                             <!-- VIP Status -->
-                                            <div class="account-tabcontent tab-pane fade" id="Account_VIPStatus">
+                                            <div class="tab-pane fade p-2" id="Account_VIPStatus">
                                                 <div class="row">
                                                     <!-- VIP current -->
                                                     <div class="col-12 col-lg-9 p-0 mb-3">
@@ -206,8 +205,8 @@
                                                             </div>
                                                             <div class="membervip-textBox">
                                                                 <div class="d-flex align-items-center">
-                                                                    <div class="playerpopup-levelnote yellowtext fw-bold text-center">Current Level:</div>
-                                                                    <div class="playerpopup-leveltext text-center fst-italic">
+                                                                    <div class="membervip-levelnote yellowtext fw-bold text-center">Current Level:</div>
+                                                                    <div class="membervip-leveltext text-center fst-italic">
                                                                         <span>VIP</span>
                                                                         <span>2</span>
                                                                     </div>
@@ -460,19 +459,33 @@
                                                 
 
                                             </div>
-                                        </div>
 
+                                        </div>
                                     </div>
 
-
-                                    <div class="tab-pane fade" id="actiontab-deposit">2DepositDeposit</div>
-                                    <div class="tab-pane fade" id="actiontab-withdrawal">3Withdrawal</div>
-                                    <div class="tab-pane fade" id="actiontab-bankmanagement">4Bank Management</div>
-                                    <div class="tab-pane fade" id="actiontab-transaction">5Transaction</div>
-                                    <div class="tab-pane fade" id="actiontab-gamewallet">6Game Wallet</div>
-                                    <div class="tab-pane fade" id="actiontab-resetpassword">7Reset Password</div>
                                 </div>
+
+                                <!-- VIP club -->
+                                <div class="VIPclubBox" style="display: none;">
+                                    <div class="VIPclub-backbtnBox">
+                                        <button class="btn btn-backprepage mt-3"><img src="./assets/img/icon/arrow-left.png"> Back</button>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="nav nav-pills left-tabBox" role="tablist">
+                                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#VIPclub_privileges">VIP Privileges</button>
+                                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#VIPclub_rules">VIP Evengt Rules</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="pagetab-deposit">2DepositDeposit</div>
+                                <div class="tab-pane fade" id="pagetab-withdrawal">3Withdrawal</div>
+                                <div class="tab-pane fade" id="pagetab-bankmanagement">4Bank Management</div>
+                                <div class="tab-pane fade" id="pagetab-transaction">5Transaction</div>
+                                <div class="tab-pane fade" id="pagetab-gamewallet">6Game Wallet</div>
+                                <div class="tab-pane fade" id="pagetab-resetpassword">7Reset Password</div>
                             </div>
+                            
                         </div>
                         
                     </div>
@@ -1038,7 +1051,7 @@
     document.addEventListener('DOMContentLoaded', function() {
         const rowContainer = document.querySelector('.member-contentBox .row');
         const navLinks = document.querySelectorAll('.member-pagetabBox .nav-link');
-        const backButton = document.querySelector('.btn-arrow');
+        const backleftButton = document.querySelector('.btn-backleftarrow');
         
         function checkScreenSize() {   // 檢測螢幕大小並添加類別
             if (window.innerWidth <= 767) {
@@ -1064,8 +1077,8 @@
             });
         });
         
-        if (backButton) {   // 點擊返回按鈕
-            backButton.addEventListener('click', function() {
+        if (backleftButton) {   // 點擊返回按鈕
+            backleftButton.addEventListener('click', function() {
                 rowContainer.classList.remove('show-pagetitle');   // 返回左側選單
             });
         }
