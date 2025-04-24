@@ -21,10 +21,6 @@ img {width: 100%;}
 a{
     color: #fff;
 }
-.row>* {
-    padding-left: 4px;
-    padding-right: 4px;
-}
 .yellowtext{
     color: rgba(254, 240, 28, 1)!important;
 }
@@ -232,7 +228,6 @@ tr:last-child td {
     align-items: center;
     padding: 5px 10px;
     color: #fff;
-    font-weight: 700;
 }
 .dropdown-lang-menu .dropdown-item:hover{
     background: rgba(158, 57, 57, 1);
@@ -387,6 +382,7 @@ tr:last-child td {
 }
 @media (max-width: 767px) {
     .sidebar {
+        width: 250px;
         left: auto;
         right: 0;
         transform: translateX(100%);
@@ -809,9 +805,6 @@ tr:last-child td {
     height: 48px;
     margin-right: 15px;
 }
-.playerpopup-balance{
-    font-weight: 700;
-}
 .btn-logout{
     border: 1px solid rgba(254, 240, 28, 1);
     color: rgba(254, 240, 28, 1);
@@ -850,7 +843,6 @@ tr:last-child td {
     text-shadow: -1px -1px 0 #FFF21C,  1px -1px 0 #FFF21C,  -1px  1px 0 #FFF21C, 1px  1px 0 #FFF21C;
 }
 .playerpopup-levelnote{
-    font-weight: 700;
     margin-right: 10px;
 }
 .playerpopup-pagelinkBox{
@@ -899,9 +891,6 @@ tr:last-child td {
     width: 30px;
     height: auto;
 }
-.walletpopup-gamebalance{
-    font-weight: 700;
-}
 .btn-refreshbalance{
     padding: 0;
 }
@@ -931,7 +920,6 @@ tr:last-child td {
     height: auto;
 }
 .mobileplayer-balance{
-    font-weight: 700;
     gap: 3px;
 }
 .mobileplayer-balance img{
@@ -967,7 +955,6 @@ tr:last-child td {
 }
 .lr-popuptitle{
     font-size: 32px;
-    font-weight: 700;
 }
 .lr-inputBox{
     margin-top: 16px;
@@ -1130,7 +1117,6 @@ tr:last-child td {
     padding: 16px;
 }
 .promotion-texttitle{
-    font-weight: 700;
     font-size: 24px;
 }
 .promotion-textdirection{
@@ -1209,7 +1195,6 @@ tr:last-child td {
 }
 .program-title {
     font-size: 32px;
-    font-weight: 700;
     margin-bottom: 5px;
 }
 .program-content {
@@ -1323,7 +1308,6 @@ tr:last-child td {
 }
 .commission-title{
     font-size: 24px;
-    font-weight: 700;
 }
 .accordion-item{
     border: 1px solid rgba(178, 35, 53, 1);
@@ -1339,13 +1323,11 @@ tr:last-child td {
 }
 .faq-title{
     font-size: 24px;
-    font-weight: 700;
 }
 .accordion-button{
     background: rgba(178, 35, 53, 1);
     color: #fff;
     padding: 10px 16px;
-    font-weight: 700;
     height: 56px;
 }
 .accordion-button:not(.collapsed){
@@ -1446,7 +1428,6 @@ tr:last-child td {
     height: calc(100% - 100px);
 }
 .gameentrance-text{
-    font-weight: 700;
     font-size: 32px;
     margin-bottom: 30px;
     padding: 0 12px;
@@ -1582,9 +1563,6 @@ tr:last-child td {
     width: 100px;
     height: auto;
 }
-.member-balance{
-    font-weight: 700;
-}
 .member-pagetabBox .nav-link{
     margin: 6px 0;
     text-align: start;
@@ -1617,7 +1595,6 @@ tr:last-child td {
 }
 .member-pagetitle{
     font-size: 20px;
-    font-weight: 700;
 }
 /* Member Center-account */
 .account-tabBox{
@@ -1648,6 +1625,10 @@ tr:last-child td {
     padding: 16px;
     margin-bottom: 8px;
 }
+.membercenterBlock .row>* {
+    padding-left: 4px;
+    padding-right: 4px;
+}
 .membercenterCube{
     background: rgba(158, 57, 57, 1);
     border-radius: 8px;
@@ -1655,13 +1636,11 @@ tr:last-child td {
 }
 .memberinfo-title{
     font-size: 20px;
-    font-weight: 700;
     border-bottom: 1px solid rgba(254, 240, 28, 1);
     margin-bottom: 8px;
 }
 .membercenterBlock-title{
     font-size: 20px;
-    font-weight: 700;
     margin-bottom: 8px;
 }
 .memberinfocell{
@@ -1679,25 +1658,57 @@ tr:last-child td {
 .membervip-imgBox .viplevelimg-num{
     position: absolute;
     font-size: 20px;
-    font-weight: 700;
     top: 20px;
     left: 44px;
 }
 .membervip-textBox{
     margin-left: 10px;
 }
-.member-rebatenum{
-    font-weight: 700;
-    font-size: 20px;
-}
 .btn-vipclub, .btn-checkin{
     border-radius: 0;
     line-height: 16px;
+    padding: 0;
 }
 .btn-vipclub img, .btn-checkin img{
     height: 32px;
     width: auto;
 }
+.member-rebatenum{
+    font-size: 20px;
+}
+.nextlevelarrowicon{
+    width: 30px;
+    height: auto;
+}
+.progressbar{
+    position: relative;
+}
+.progressbar-base{
+    background: rgba(18, 0, 0, 1);
+    box-shadow: 0px -1px 1px 0px rgba(255, 255, 255, 0.25) inset;
+    border-radius: 10px;
+    height: 16px;
+    width: 100%;
+    z-index: 1;
+}
+.progressbar-current{
+    background: rgba(254, 240, 28, 1);
+    border-radius: 10px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+.progressbar-num{
+    font-size: 12px;
+    text-shadow: 0 0 5px #000, 1px 1px 3px #000, -1px -1px 3px #000;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+}
+
 @media screen and (max-width: 767px) {
     .membercenter{
         padding: 16px 0;
