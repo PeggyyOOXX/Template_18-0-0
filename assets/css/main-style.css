@@ -124,15 +124,6 @@ tr:last-child td {
     border-bottom: 0;
 }
 /* tab */
-.tabBox{
-    background: rgba(77, 7, 24, 1);
-    border-radius: 8px;
-    padding: 8px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 0;
-    list-style: none;
-}
 .tab-option {
     padding: 5px 8px;
     margin: 0 3px;
@@ -144,10 +135,47 @@ tr:last-child td {
     background: rgba(178, 35, 53, 1);
     border-radius: 4px;
 }
+.center-tabBox{
+    background: rgba(77, 7, 24, 1);
+    border: 2px solid rgba(178, 35, 53, 1);
+    border-radius: 8px;
+    padding: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    font-size: 20px;
+    width: 25%;
+}
+.left-tabBox{
+    background: rgba(77, 7, 24, 1);
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    list-style: none;
+}
+@media (max-width: 1023px){
+    .center-tabBox{
+        width: 70%;
+    }
+}
 @media screen and (max-width: 767px){
     .tab-option {
         font-size: 10px;
         padding: 5px;
+    }
+    .center-tabBox{
+        width: 100%;
+        font-size: 16px;
+        margin: 15px 0;
+    }
+    .left-tabBox{
+        width: 100%;
+    }
+    .member-tab-option {
+        flex: 1 1 0;
+        white-space: nowrap;
     }
 }
 /* search box */
@@ -946,7 +974,7 @@ tr:last-child td {
     align-items: center;
     justify-content: center;
 }
-.btn-arrow {
+.loginregister-btnarrow {
     position: absolute;
     left: 0;
     background: none;
@@ -1278,17 +1306,6 @@ tr:last-child td {
         background-color: rgba(254, 240, 28, 1);
     }
 }
-.affiliate-tabBox{
-    background: rgba(77, 7, 24, 1);
-    border: 2px solid rgba(178, 35, 53, 1);
-    border-radius: 8px;
-    padding: 4px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 30px 0;
-    font-size: 20px;
-    width: 25%;
-}
 .affiliate-tab{
     color: #fff;
     border: none;
@@ -1359,19 +1376,9 @@ tr:last-child td {
     border-bottom-right-radius: 16px;
 }
 .accordion-body{
-    color: #fff;
-}
-@media (max-width: 1023px){
-    .affiliate-tabBox{
-        width: 70%;
-    }
+    color: #fff; 
 }
 @media screen and (max-width: 767px){
-    .affiliate-tabBox{
-        width: 100%;
-        font-size: 16px;
-        margin: 15px 0;
-    }
     .affiliate-tab{
         padding: 8px;
     }
@@ -1597,27 +1604,22 @@ tr:last-child td {
     font-size: 20px;
 }
 /* Member Center-account */
-.account-tabBox{
-    background: rgba(77, 7, 24, 1);
-    border: 2px solid rgba(178, 35, 53, 1);
-    border-radius: 8px;
-    padding: 4px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 8px;
-}
-.account-tab{
+.member-tab-option{
     color: #fff;
     border: none;
     padding: 8px 16px;
     background: none;
 }
-.account-tab.active{
+.member-tab-option.active{
     background: rgba(178, 35, 53, 1);
     border-radius: 4px;
 }
-.account-tabcontent{
-    padding: 8px;
+.btn-backleftarrow {
+    position: absolute;
+    left: 0;
+    background: none;
+    border: none;
+    padding-left: 0;
 }
 .membercenterBlock{
     background: rgba(112, 10, 35, 1);
@@ -1664,6 +1666,14 @@ tr:last-child td {
 .membervip-textBox{
     margin-left: 10px;
 }
+.membervip-levelnote{
+    margin-right: 10px;
+}
+.membervip-leveltext{
+    font-weight: 900;
+    color: #FF0004;
+    text-shadow: -1px -1px 0 #FFF21C,  1px -1px 0 #FFF21C,  -1px  1px 0 #FFF21C, 1px  1px 0 #FFF21C;
+}
 .btn-vipclub, .btn-checkin{
     border-radius: 0;
     line-height: 16px;
@@ -1708,6 +1718,17 @@ tr:last-child td {
     text-align: center;
     width: 100%;
 }
+.btn-backprepage{
+    display: inline-flex;
+    align-items: center;
+}
+.VIPclub-backbtnBox img{
+    height: 24px;
+    width: auto;
+}
+.VIPclub-tabcontent{
+    padding: 8px;
+}
 
 @media screen and (max-width: 767px) {
     .membercenter{
@@ -1715,12 +1736,6 @@ tr:last-child td {
     }
     .member-contentBox{
         width: unset;
-    }
-    .account-tabBox{
-        width: 100%;
-    }
-    .account-tab{
-        width: 50%;
     }
     .membercenterBlock{
         padding-bottom: 32px;
@@ -1752,7 +1767,7 @@ tr:last-child td {
     .mobile-view-mode.show-pagetitle .membercenter-right {
         display: block;
     }
-    .btn-arrow {
+    .loginregister-btnarrow {
         display: inline-block;
         padding: 5px;
         background: none;
