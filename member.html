@@ -48,9 +48,9 @@
                         <img src="./assets/img/icon/en.png">
                     </button>
                     <ul class="dropdown-menu dropdown-lang-menu">
-                        <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/en.png"><span>English</span></button></li>
-                        <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/vn.png"><span>Tiếng Việt</span></button></li>
-                        <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/cn.png"><span>简体中文</span></button></li>
+                        <li><button class="dropdown-item fw-bold" type="button"><img src="./assets/img/icon/en.png"><span>English</span></button></li>
+                        <li><button class="dropdown-item fw-bold" type="button"><img src="./assets/img/icon/vn.png"><span>Tiếng Việt</span></button></li>
+                        <li><button class="dropdown-item fw-bold" type="button"><img src="./assets/img/icon/cn.png"><span>简体中文</span></button></li>
                     </ul>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                                     <div class="member-levelBox d-flex align-items-center justify-content-center">
                                         <div class="member-levelimg">
                                             <img src="./assets/img/figure/level.png" class="viplevelimg-level">
-                                            <span class="viplevelimg-num">2</span>
+                                            <span class="viplevelimg-num fw-bold">2</span>
                                         </div>
                                         <div class="member-leveltext text-center fst-italic">
                                             <span>VIP</span>
@@ -76,7 +76,7 @@
                                     </div>
                                     <div class="member-userimg"><img src="./assets/img/userimg/user1.png"></div>
                                     <div class="member-username">Username</div>
-                                    <div class="member-balance yellowtext">
+                                    <div class="member-balance yellowtext fw-bold">
                                         <span>VND</span>
                                         <span>999,999,999</span>
                                     </div>
@@ -123,24 +123,25 @@
                             <!--page title-->
                             <div class="member-titleBox align-items-center justify-content-center PChide">
                                 <button class="btn btn-arrow"><img src="./assets/img/icon/arrow-left.png"></button>
-                                <div class="member-pagetitle">Account</div>
+                                <div class="member-pagetitle fw-bold">Account</div>
                             </div>
 
                             <div class="member-tabcontentBox">
-
                                 <div class="tab-content" id="v-pills-tabContent">
+                                    <!-- Account -->
                                     <div class="tab-pane fade show active" id="actiontab-account">
 
                                         <div class="d-flex">
                                             <div class="nav nav-pills account-tabBox" role="tablist">
                                                 <button class="nav-link account-tab active" data-bs-toggle="pill" data-bs-target="#Account_Personal">Personal</button>
-                                                <button class="nav-link account-tab" data-bs-toggle="pill" data-bs-target="#Account_VipStatus">VIP status</button>
+                                                <button class="nav-link account-tab" data-bs-toggle="pill" data-bs-target="#Account_VIPStatus">VIP status</button>
                                             </div>
                                         </div>
                                         <div class="tab-content">
+                                            <!-- Personal -->
                                             <div class="account-tabcontent tab-pane fade show active" id="Account_Personal">
                                                 <div class="membercenterBlock">
-                                                    <div class="memberinfo-title yellowtext">Personal Information</div>
+                                                    <div class="memberinfo-title yellowtext fw-bold">Personal Information</div>
                                                     <div class="row gx-2">
                                                         <div class="col-12 col-md-6">
                                                             <div class="memberinfocell d-flex justify-content-between">
@@ -175,7 +176,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="membercenterBlock">
-                                                    <div class="memberinfo-title yellowtext">Contact Information</div>
+                                                    <div class="memberinfo-title yellowtext fw-bold">Contact Information</div>
                                                     <div class="row gx-2">
                                                         <div class="col-12 col-md-6">
                                                             <div class="memberinfocell d-flex justify-content-between">
@@ -193,18 +194,19 @@
                                                 </div>
                                             </div>
 
-
-                                            <div class="account-tabcontent tab-pane fade" id="Account_VipStatus">
+                                            <!-- VIP Status -->
+                                            <div class="account-tabcontent tab-pane fade" id="Account_VIPStatus">
                                                 <div class="row">
-                                                    <div class="col-12 col-lg-9 p-0">
+                                                    <!-- VIP current -->
+                                                    <div class="col-12 col-lg-9 p-0 mb-3">
                                                         <div class="membervipBox text-center d-flex align-items-center">
                                                             <div class="membervip-imgBox">
                                                                 <img src="./assets/img/figure/level.png" class="viplevelimg-level">
-                                                                <span class="viplevelimg-num">2</span>
+                                                                <span class="viplevelimg-num fw-bold">2</span>
                                                             </div>
                                                             <div class="membervip-textBox">
                                                                 <div class="d-flex align-items-center">
-                                                                    <div class="playerpopup-levelnote yellowtext text-center">Current Level:</div>
+                                                                    <div class="playerpopup-levelnote yellowtext fw-bold text-center">Current Level:</div>
                                                                     <div class="playerpopup-leveltext text-center fst-italic">
                                                                         <span>VIP</span>
                                                                         <span>2</span>
@@ -217,7 +219,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12 col-lg-3 p-0">
+                                                    <!-- VIP Check in -->
+                                                    <div class="col-12 col-lg-3 p-0 mb-3">
                                                         <div class="row text-center align-items-center">
                                                             <div class="col-6">
                                                                 <button class="btn btn-checkin">
@@ -234,8 +237,140 @@
                                                         </div>
                                                     </div>
 
+                                                    <!-- VIP Discounts (Now) -->
                                                     <div class="membercenterBlock text-center">
-                                                        <div class="membercenterBlock-title">VIP Discounts</div>
+                                                        <div class="membercenterBlock-title fw-bold">VIP Discounts</div>
+                                                        <div class="row pb-3">
+                                                            <div class="offset-lg-2 col-lg-2 col-6">
+                                                                <div class="membercenterCube">
+                                                                    <div class="member-rebatenum yellowtext fw-bold">0.1%</div>
+                                                                    <div class="member-rebatecategory">Cockfighting</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2 col-6">
+                                                                <div class="membercenterCube">
+                                                                    <div class="member-rebatenum yellowtext fw-bold">0.2%</div>
+                                                                    <div class="member-rebatecategory">Slots</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2 col-6">
+                                                                <div class="membercenterCube">
+                                                                    <div class="member-rebatenum yellowtext fw-bold">0.3%</div>
+                                                                    <div class="member-rebatecategory">Live</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2 col-6">
+                                                                <div class="membercenterCube">
+                                                                    <div class="member-rebatenum yellowtext fw-bold">0.4%</div>
+                                                                    <div class="member-rebatecategory">Lottery</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="offset-lg-2 col-lg-2 col-6">
+                                                                <div class="membercenterCube">
+                                                                    <div class="member-rebatenum yellowtext fw-bold">0.5%</div>
+                                                                    <div class="member-rebatecategory">Sports</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2 col-6">
+                                                                <div class="membercenterCube">
+                                                                    <div class="member-rebatenum yellowtext fw-bold">0.6%</div>
+                                                                    <div class="member-rebatecategory">Board</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2 col-6">
+                                                                <div class="membercenterCube">
+                                                                    <div class="member-rebatenum yellowtext fw-bold">0.7%</div>
+                                                                    <div class="member-rebatecategory">Fishing</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2 col-6">
+                                                                <div class="membercenterCube">
+                                                                    <div class="member-rebatenum yellowtext fw-bold">0.8%</div>
+                                                                    <div class="member-rebatecategory">E-sports</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- VIP Benefits (Now) -->
+                                                    <div class="membercenterBlock text-center">
+                                                        <div class="membercenterBlock-title fw-bold">VIP Benefits</div>
+                                                        <div class="row pb-3">
+                                                            <div class="offset-lg-2 col-lg-2 col-6">
+                                                                <div class="membercenterCube">
+                                                                    <img src="./assets/img/figure/levelup.png" class="">
+                                                                    <div class="">Level-up Bonus</div>
+                                                                    <div class="yellowtext">$ 1000</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2 col-6">
+                                                                <div class="membercenterCube">
+                                                                    <img src="./assets/img/figure/birthday.png" class="">
+                                                                    <div class="">Birthday Bonus</div>
+                                                                    <div class="yellowtext">$ 2000</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2 col-6">
+                                                                <div class="membercenterCube">
+                                                                    <img src="./assets/img/figure/checkin.png" class="">
+                                                                    <div class="">Check-in Bonus</div>
+                                                                    <div class="yellowtext">$ 3000</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2 col-6">
+                                                                <div class="membercenterCube">
+                                                                    <img src="./assets/img/figure/redenvelope.png" class="">
+                                                                    <div class="">Red envelope </div>
+                                                                    <div class="yellowtext">$ 4000</div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- next arrow -->
+                                                    <div class="text-center my-3">
+                                                        <div class="mb-2">
+                                                            <img src="./assets/img/icon/triangle.png" class="nextlevelarrowicon">
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <div class="playerpopup-levelnote yellowtext fw-bold text-center">To The Next Level:</div>
+                                                            <div class="playerpopup-leveltext text-center fst-italic">
+                                                                <span>VIP</span>
+                                                                <span>3</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- total deposit amount - progressbar -->
+                                                    <div class="mb-4">
+                                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                                            <div>deposit amount</div>
+                                                            <div><span>1000</span>/<span>10000</span></div>
+                                                        </div>
+                                                        <div class="progressbar">
+                                                            <div class="progressbar-base"></div>
+                                                            <div class="progressbar-current" style="width:10%;"></div>
+                                                            <div class="progressbar-num">10%</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- qualifying bet - progressbar -->
+                                                    <div class="mb-4">
+                                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                                            <div>qualifying bet</div>
+                                                            <div><span>7000</span>/<span>10000</span></div>
+                                                        </div>
+                                                        <div class="progressbar">
+                                                            <div class="progressbar-base"></div>
+                                                            <div class="progressbar-current" style="width:70%;"></div>
+                                                            <div class="progressbar-num">70%</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- VIP Discounts (Next) -->
+                                                    <div class="membercenterBlock text-center">
+                                                        <div class="membercenterBlock-title fw-bold">VIP Discounts</div>
                                                         <div class="row pb-3">
                                                             <div class="offset-lg-2 col-lg-2 col-6">
                                                                 <div class="membercenterCube">
@@ -288,33 +423,30 @@
                                                         </div>
                                                     </div>
 
+                                                    <!-- VIP Benefits (Next) -->
                                                     <div class="membercenterBlock text-center">
-                                                        <div class="membercenterBlock-title">VIP Benefits</div>
+                                                        <div class="membercenterBlock-title fw-bold">VIP Benefits</div>
                                                         <div class="row pb-3">
                                                             <div class="offset-lg-2 col-lg-2 col-6">
                                                                 <div class="membercenterCube">
-                                                                    <img src="./assets/img/figure/levelup.png" class="">
                                                                     <div class="">Level-up Bonus</div>
                                                                     <div class="yellowtext">$ 1000</div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-2 col-6">
                                                                 <div class="membercenterCube">
-                                                                    <img src="./assets/img/figure/birthday.png" class="">
                                                                     <div class="">Birthday Bonus</div>
                                                                     <div class="yellowtext">$ 2000</div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-2 col-6">
                                                                 <div class="membercenterCube">
-                                                                    <img src="./assets/img/figure/checkin.png" class="">
                                                                     <div class="">Check-in Bonus</div>
                                                                     <div class="yellowtext">$ 3000</div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-2 col-6">
                                                                 <div class="membercenterCube">
-                                                                    <img src="./assets/img/figure/redenvelope.png" class="">
                                                                     <div class="">Red envelope </div>
                                                                     <div class="yellowtext">$ 4000</div>
                                                                 </div>
@@ -322,6 +454,7 @@
 
                                                         </div>
                                                     </div>
+
                                                 </div>
 
                                                 
@@ -585,7 +718,7 @@
                     <img src="./assets/img/userimg/user1.png">
                     <div>
                         <span class="playerpopup-name">Username</span>
-                        <div class="playerpopup-balance yellowtext">
+                        <div class="playerpopup-balance yellowtext fw-bold">
                             <span>VND</span>
                             <span>150K</span>
                         </div>
@@ -605,12 +738,12 @@
                     <div class="playerpopup-currentlevel col-3">
                         <div class="playerpopup-levelimg">
                             <img src="./assets/img/figure/level.png" class="viplevelimg-level">
-                            <span class="viplevelimg-num">2</span>
+                            <span class="viplevelimg-num fw-bold">2</span>
                         </div>
                     </div>
                     <div class="col-9">
                         <div class="d-flex align-items-center">
-                            <div class="playerpopup-levelnote yellowtext text-center">Current Level:</div>
+                            <div class="playerpopup-levelnote yellowtext fw-bold text-center">Current Level:</div>
                             <div class="playerpopup-leveltext text-center fst-italic">
                                 <span>VIP</span>
                                 <span>2</span>
@@ -664,7 +797,7 @@
                             <span>Cockfighting</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">3,000,000</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">3,000,000</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -677,7 +810,7 @@
                             <span>JILI</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -687,7 +820,7 @@
                             <span>PG SOFT</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -697,7 +830,7 @@
                             <span>PP</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -710,7 +843,7 @@
                             <span>SEXY</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -720,7 +853,7 @@
                             <span>VIA</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -730,7 +863,7 @@
                             <span>CQ9</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -743,7 +876,7 @@
                             <span>RICH88</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -753,7 +886,7 @@
                             <span>KINGMIDAS</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -763,7 +896,7 @@
                             <span>JILI</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -776,7 +909,7 @@
                             <span>SABA</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -786,7 +919,7 @@
                             <span>UG</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -796,7 +929,7 @@
                             <span>CMD368</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -809,7 +942,7 @@
                             <span>RICH88</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -819,7 +952,7 @@
                             <span>KINGMIDAS</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -829,7 +962,7 @@
                             <span>V8 POKER</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -842,7 +975,7 @@
                             <span>JILI</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -852,7 +985,7 @@
                             <span>JDB</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -862,7 +995,7 @@
                             <span>FA CHAI</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -875,7 +1008,7 @@
                             <span>KINGMIDAS</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -885,7 +1018,7 @@
                             <span>SABA</span>
                         </div>
                         <div class="walletpopup-balanceBox">
-                            <span class="walletpopup-gamebalance yellowtext">0</span>
+                            <span class="walletpopup-gamebalance yellowtext fw-bold">0</span>
                             <button class="btn btn-refreshbalance"><img src="./assets/img/icon/refresh.png"></button>
                         </div>
                     </div>
@@ -901,24 +1034,7 @@
 
     <script src="./assets/js/layout.js"></script>
     <script>
-    //遊戲快選區塊滑入效果
-    document.querySelectorAll('.gameroomlink').forEach(link => {
-        link.addEventListener('mouseenter', () => {
-            document.querySelectorAll('.gameroomlink').forEach(other => {
-                if (other !== link) {
-                    other.classList.add('dimmed');
-                }
-            });
-        });
-        link.addEventListener('mouseleave', () => {
-            document.querySelectorAll('.gameroomlink').forEach(other => {
-                other.classList.remove('dimmed');
-            });
-        });
-    });
-
-
-    //手機版 頁籤內容滑入滑出  
+    //手機版 頁籤內容顯示/隱藏
     document.addEventListener('DOMContentLoaded', function() {
         const rowContainer = document.querySelector('.member-contentBox .row');
         const navLinks = document.querySelectorAll('.member-pagetabBox .nav-link');
