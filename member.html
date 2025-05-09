@@ -128,7 +128,7 @@
                             
                             <div class="tab-content">
                                 <!-- Account -->
-                                <div class="tab-pane fade show active" id="pagetab-account">
+                                <div class="tab-pane fade" id="pagetab-account">
                                     <div class="d-flex mb-2">
                                         <div class="nav nav-pills left-tabBox" role="tablist">
                                             <button class="nav-link member-tab-option active" data-bs-toggle="pill" data-bs-target="#Account_Personal">Personal</button>
@@ -905,7 +905,264 @@
                                 <div class="tab-pane fade" id="pagetab-deposit">2DepositDeposit</div>
                                 <div class="tab-pane fade" id="pagetab-withdrawal">3Withdrawal</div>
                                 <div class="tab-pane fade" id="pagetab-bankmanagement">4Bank Management</div>
-                                <div class="tab-pane fade" id="pagetab-transaction">5Transaction</div>
+                                
+
+                                <div class="tab-pane fade show active" id="pagetab-transaction">
+                                    <div class="d-flex mb-2">
+                                        <div class="nav nav-pills left-tabBox" role="tablist">
+                                            <button class="nav-link member-tab-option active" data-bs-toggle="pill" data-bs-target="#Transaction_Deposit">Deposit</button>
+                                            <button class="nav-link member-tab-option" data-bs-toggle="pill" data-bs-target="#Transaction_Withdraw">Withdraw</button>
+                                        </div>
+                                    </div>
+                                    <div class="member-tabcontentBox">
+                                        <div class="tab-content">
+                                            <!-- Deposit -->
+                                            <div class="transaction-deposit tab-pane fade p-2 show active" id="Transaction_Deposit">
+                                                <!-- deposit record -->
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <div class="nav nav-pills center-tabBox" role="tablist">
+                                                        <button class="nav-link member-tab-option active" data-bs-toggle="pill" data-bs-target="#Deposit_today">Today</button>
+                                                        <button class="nav-link member-tab-option" data-bs-toggle="pill" data-bs-target="#Deposit_thisweek">This week</button>
+                                                        <button class="nav-link member-tab-option" data-bs-toggle="pill" data-bs-target="#Deposit_lastweek">Last week</button>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-content">
+                                                    <!--Today-->
+                                                    <div class="tab-pane fade p-2 show active" id="Deposit_today">
+                                                        <div class="depositrecord-tableBox p-2">
+                                                            <table class="depositrecord-table text-center">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Deposit Amount</th>
+                                                                        <th>Date</th>
+                                                                        <th>Status</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>+6,000,000</td>
+                                                                        <td>00:00:00 01/01</td>
+                                                                        <td class="orangetext">In process</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>+66,000,000</td>
+                                                                        <td>00:00:00 01/02</td>
+                                                                        <td class="greentext">Approved</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>+666,000,000</td>
+                                                                        <td>00:00:00 01/03</td>
+                                                                        <td class="redtext">Denied</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <!--Thisweek-->
+                                                    <div class="tab-pane fade p-2" id="Deposit_thisweek">
+                                                        <div class="depositrecord-tableBox p-2">
+                                                            <table class="depositrecord-table text-center">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Deposit Amount</th>
+                                                                        <th>Date</th>
+                                                                        <th>Status</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>+6,000,000</td>
+                                                                        <td>00:00:00 01/01</td>
+                                                                        <td class="orangetext">In process</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>+66,000,000</td>
+                                                                        <td>00:00:00 01/02</td>
+                                                                        <td class="greentext">Approved</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>+666,000,000</td>
+                                                                        <td>00:00:00 01/03</td>
+                                                                        <td class="redtext">Denied</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>+66,000,000</td>
+                                                                        <td>00:00:00 01/04</td>
+                                                                        <td class="greentext">Approved</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>+6,000,000</td>
+                                                                        <td>00:00:00 01/05</td>
+                                                                        <td class="orangetext">In process</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <!--lastweek-->
+                                                    <div class="tab-pane fade p-2" id="Deposit_lastweek">
+                                                        <div class="depositrecord-tableBox p-2">
+                                                            <table class="depositrecord-table text-center">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Deposit Amount</th>
+                                                                        <th>Date</th>
+                                                                        <th>Status</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>+6,000,000</td>
+                                                                        <td>00:00:00 01/01</td>
+                                                                        <td class="orangetext">In process</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>+66,000,000</td>
+                                                                        <td>00:00:00 01/02</td>
+                                                                        <td class="greentext">Approved</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>+666,000,000</td>
+                                                                        <td>00:00:00 01/03</td>
+                                                                        <td class="redtext">Denied</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>+666,000,000</td>
+                                                                        <td>00:00:00 01/04</td>
+                                                                        <td class="redtext">Denied</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Withdraw -->
+                                            <div class="transaction-withdraw tab-pane fade p-2" id="Transaction_Withdraw">
+                                                <!-- withdraw record -->
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <div class="nav nav-pills center-tabBox" role="tablist">
+                                                        <button class="nav-link member-tab-option active" data-bs-toggle="pill" data-bs-target="#Withdraw_today">Today</button>
+                                                        <button class="nav-link member-tab-option" data-bs-toggle="pill" data-bs-target="#Withdraw_thisweek">This week</button>
+                                                        <button class="nav-link member-tab-option" data-bs-toggle="pill" data-bs-target="#Withdraw_lastweek">Last week</button>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-content">
+                                                    <!--Today-->
+                                                    <div class="tab-pane fade p-2 show active" id="Withdraw_today">
+                                                        <div class="withdrawrecord-tableBox p-2">
+                                                            <table class="withdrawrecord-table text-center">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Deposit Amount</th>
+                                                                        <th>Date</th>
+                                                                        <th>Status</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>-5,000,000</td>
+                                                                        <td>00:00:00 01/01</td>
+                                                                        <td class="orangetext">In process</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>-55,000,000</td>
+                                                                        <td>00:00:00 01/02</td>
+                                                                        <td class="greentext">Approved</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>-555,000,000</td>
+                                                                        <td>00:00:00 01/03</td>
+                                                                        <td class="redtext">Denied</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <!--Thisweek-->
+                                                    <div class="tab-pane fade p-2" id="Withdraw_thisweek">
+                                                        <div class="withdrawrecord-tableBox p-2">
+                                                            <table class="withdrawrecord-table text-center">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Deposit Amount</th>
+                                                                        <th>Date</th>
+                                                                        <th>Status</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>-5,000,000</td>
+                                                                        <td>00:00:00 01/01</td>
+                                                                        <td class="orangetext">In process</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>-55,000,000</td>
+                                                                        <td>00:00:00 01/02</td>
+                                                                        <td class="greentext">Approved</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>-555,000,000</td>
+                                                                        <td>00:00:00 01/03</td>
+                                                                        <td class="redtext">Denied</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>-55,000,000</td>
+                                                                        <td>00:00:00 01/04</td>
+                                                                        <td class="greentext">Approved</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>-5,000,000</td>
+                                                                        <td>00:00:00 01/05</td>
+                                                                        <td class="orangetext">In process</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <!--lastweek-->
+                                                    <div class="tab-pane fade p-2" id="Withdraw_lastweek">
+                                                        <div class="withdrawrecord-tableBox p-2">
+                                                            <table class="withdrawrecord-table text-center">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Deposit Amount</th>
+                                                                        <th>Date</th>
+                                                                        <th>Status</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>-5,000,000</td>
+                                                                        <td>00:00:00 01/01</td>
+                                                                        <td class="orangetext">In process</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>-55,000,000</td>
+                                                                        <td>00:00:00 01/02</td>
+                                                                        <td class="greentext">Approved</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>-555,000,000</td>
+                                                                        <td>00:00:00 01/03</td>
+                                                                        <td class="redtext">Denied</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>-555,000,000</td>
+                                                                        <td>00:00:00 01/04</td>
+                                                                        <td class="redtext">Denied</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 
                                 <!-- Game Wallet -->
                                 <div class="tab-pane fade" id="pagetab-gamewallet">
