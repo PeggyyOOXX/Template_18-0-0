@@ -902,11 +902,94 @@
                                     </div>
                                 </div>
 
-                                <div class="tab-pane fade" id="pagetab-deposit">2DepositDeposit</div>
+                                <!-- Deposit -->
+                                <div class="tab-pane fade" id="pagetab-deposit">
+                                    <div class="member-tabcontentBox">
+                                        <div class="depositBox py-3">
+                                            <div class="mb-3">
+                                                <div class="deposit-waytitle my-2">Select a provider</div>
+                                                <input type="radio" class="btn-check" name="provider" id="Provider1" autocomplete="off" checked>
+                                                <label class="btn btn-depositway py-2" for="Provider1">
+                                                    <img src="./assets/img/icon/bank.png">
+                                                    <span>Bank Transfer</span>
+                                                </label>
+                                                <input type="radio" class="btn-check" name="provider" id="Provider2" autocomplete="off">
+                                                <label class="btn btn-depositway py-2" for="Provider2">
+                                                    <img src="./assets/img/icon/momo.png">
+                                                    <span>Momo</span>
+                                                </label>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="deposit-waytitle my-2">Select payment method</div>
+                                                <input type="radio" class="btn-check" name="paymentmethod" id="PaymentMethod1" autocomplete="off" checked>
+                                                <label class="btn btn-depositway py-2" for="PaymentMethod1">
+                                                    <span>IE PAY</span>
+                                                </label>
+                                                <input type="radio" class="btn-check" name="paymentmethod" id="PaymentMethod2" autocomplete="off">
+                                                <label class="btn btn-depositway py-2" for="PaymentMethod2">
+                                                    <span>VN PAY</span>
+                                                </label>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="deposit-waytitle my-2">Select a bank</div>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-depositdropdown dropdown-toggle py-2 d-flex align-items-center justify-content-between" type="button" data-bs-toggle="dropdown">
+                                                        Select a bank
+                                                    </button>
+                                                    <ul class="dropdown-menu selectbank-dropdown">
+                                                        <li><button class="dropdown-item" type="button">
+                                                            <img src="./assets/img/bank/vietin.png">
+                                                            <span>Vietin Bank</span>
+                                                        </button></li>
+                                                        <li><button class="dropdown-item" type="button">
+                                                            <img src="./assets/img/bank/vietcom.png">
+                                                            <span>Vietincom Bank</span>
+                                                        </button></li>
+                                                        <li><button class="dropdown-item" type="button">
+                                                            <img src="./assets/img/bank/msb.png">
+                                                            <span>MSB</span>
+                                                        </button></li>
+                                                        <li><button class="dropdown-item disabled" type="button">
+                                                            <img src="./assets/img/bank/vib.png">
+                                                            <span>VIB Bank</span>
+                                                            <span>(under maintenance)</span>
+                                                        </button></li>
+                                                    </ul>
+                                                    </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="deposit-waytitle my-2">Deposit amount</div>
+                                                <div class="inputcontent">
+                                                    <input placeholder="đ  150K ~ 150.000K">
+                                                </div>
+                                                <div class="yellowtext">Minimun deposit amount should be 150K</div>
+                                                <div class="d-flex align-items-center justify-content-between gap-1 my-1">
+                                                    <button class="btn btn-depositamount">150K</button>
+                                                    <button class="btn btn-depositamount">300K</button>
+                                                    <button class="btn btn-depositamount">450K</button>
+                                                    <button class="btn btn-depositamount">600K</button>
+                                                    <button class="btn btn-depositamount">750K</button>
+                                                </div>
+                                                <div class="deposit-realityamountBox d-flex align-items-center justify-content-between my-2">
+                                                    <div>Reality</div>
+                                                    <div class="deposit-totalamount fw-bold">
+                                                        <span>150K</span>
+                                                        <span>VND</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="my-3 mt-5 deposit-nextbtn">
+                                                <button class="btn btn-primary">Next</button>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="tab-pane fade" id="pagetab-withdrawal">3Withdrawal</div>
                                 <div class="tab-pane fade" id="pagetab-bankmanagement">4Bank Management</div>
                                 
-
+                                <!-- Transaction -->
                                 <div class="tab-pane fade" id="pagetab-transaction">
                                     <div class="d-flex mb-2">
                                         <div class="nav nav-pills left-tabBox" role="tablist">
