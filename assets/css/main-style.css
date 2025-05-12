@@ -1029,6 +1029,9 @@ tr:last-child td {
     width: 20px;
     height: auto;
 }
+.inputcontent input::placeholder{
+    color: #fff6;
+}
 .inputwarn{
     color:rgba(255, 0, 19, 1);
     font-size: 12px;
@@ -1767,7 +1770,85 @@ tr:last-child td {
     width: 16px;
     height: auto;
 }
-
+/* Member Center-deposit */
+.depositBox {
+    width: 70%;
+    margin: 0 auto;
+}
+.deposit-waytitle{
+    font-size: 20px;
+}
+.btn-depositway{
+    background-color: rgba(18, 0, 0, 1);
+    border: 1px solid rgba(18, 0, 0, 1);
+    width: 49%;
+}
+.btn-check:checked+.btn-depositway{
+    background-color: rgba(18, 0, 0, 1);
+    border: 1px solid #fff;
+}
+.btn-check+.btn-depositway:hover, .btn-check+.btn-depositway:active{
+    background-color: rgba(18, 0, 0, 1);
+    color: #fff;
+}
+.btn-depositway img{
+    width: 24px;
+    height: auto;
+}
+.btn-depositdropdown{
+    background: rgba(128, 45, 45, 1);
+    border: 1px solid rgba(178, 35, 53, 1);
+    width: 100%;
+}
+.btn-depositdropdown:hover, .btn-depositdropdown:active{
+    background: rgba(128, 45, 45, 1);
+}
+.selectbank-dropdown.dropdown-menu.show{
+    width: 100%;
+}
+.selectbank-dropdown .dropdown-item img{
+    height: 35px;
+    width: auto;
+}
+.selectbank-dropdown .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.selectbank-dropdown .dropdown-item.disabled {
+    opacity: 0.5;
+    cursor: not-allowed
+}
+.selectbank-dropdown .dropdown-item:focus, .selectbank-dropdown .dropdown-item:hover{
+    background-color: #ddd;
+}
+.dropdown-item span {
+    line-height: 1.2;
+}
+.btn-depositamount{
+    background: rgba(18, 0, 0, 1);
+    border: 1px solid rgba(18, 0, 0, 1);
+    width: 100%;
+}
+.btn-depositamount:hover{
+    border: 1px solid #fff;
+}
+.btn-depositamount:active{
+    background: linear-gradient(180deg, #FFF21C 0%, #F9A410 100%);
+    border: 1px solid rgba(254, 240, 28, 1);
+    color: rgba(18, 0, 0, 1)!important;
+}
+.deposit-realityamountBox{
+    background: rgba(112, 10, 35, 1);
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+.deposit-totalamount{
+    font-size: 24px;
+}
+.deposit-nextbtn button{
+    width: 100%;
+}
 /* Member Center-transaction */
 .transaction-deposit .center-tabBox .member-tab-option, .transaction-withdraw .center-tabBox .member-tab-option {
     flex: 1;
@@ -1829,6 +1910,12 @@ tr:last-child td {
     }
     .VIPclub-tableBox{
         width: 200px;
+    }
+    .selectbank-dropdown .dropdown-item img{
+        height: 20px;
+    }
+    .selectbank-dropdown .dropdown-item {
+        gap: 4px;
     }
 }
 
