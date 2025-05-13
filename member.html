@@ -960,7 +960,7 @@
                                             <div class="mb-3">
                                                 <div class="deposit-waytitle my-2">Deposit amount</div>
                                                 <div class="inputcontent">
-                                                    <input placeholder="đ  150K ~ 150.000K">
+                                                    <input placeholder="đ  150K ~ 150,000K">
                                                 </div>
                                                 <div class="yellowtext">Minimun deposit amount should be 150K</div>
                                                 <div class="d-flex align-items-center justify-content-between gap-1 my-1">
@@ -970,15 +970,15 @@
                                                     <button class="btn btn-depositamount">600K</button>
                                                     <button class="btn btn-depositamount">750K</button>
                                                 </div>
-                                                <div class="deposit-realityamountBox d-flex align-items-center justify-content-between my-2">
+                                                <div class="realityamountBox d-flex align-items-center justify-content-between my-2">
                                                     <div>Reality</div>
-                                                    <div class="deposit-totalamount fw-bold">
+                                                    <div class="totalamount fw-bold">
                                                         <span>150K</span>
                                                         <span>VND</span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="my-3 mt-5 deposit-nextbtn">
+                                            <div class="my-3 mt-5 nextbtn">
                                                 <button class="btn btn-primary">Next</button>
                                             </div>
                                             
@@ -986,7 +986,99 @@
                                     </div>
                                 </div>
 
-                                <div class="tab-pane fade" id="pagetab-withdraw">3Withdraw</div>
+                                <!-- Withdraw -->
+                                <div class="tab-pane fade" id="pagetab-withdraw">
+                                    <div class="member-tabcontentBox">
+                                        <div class="withdrawBox py-3">
+                                            <div class="stepBox">
+                                                <div class="stepone finish">
+                                                    <span class="stepcircle">1</span>
+                                                    <span>Balance</span>
+                                                </div>
+                                                <span class="stepline"></span>
+                                                <div class="steptwo now">
+                                                    <span class="stepcircle">2</span>
+                                                    <span>Choose a bank</span>
+                                                </div>
+                                            </div>
+                                            <!-- Withdraw-step1 -->
+                                            <div class="withdraw-stepone" style="display: none;">
+                                                <div class="wallet-totalBox d-flex align-items-center justify-content-between my-3">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/icon/wallet.png">
+                                                        <div>
+                                                            <span>Total balance:</span>
+                                                            <span class="walletpopup-totalbalance yellowtext">9,876,543,210</span>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn btn-primary">Transfer all</button>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="mb-3">
+                                                    <div class="withdraw-waytitle my-2">Withdraw amount</div>
+                                                    <div class="inputcontent">
+                                                        <input placeholder="đ  150K ~ 150,000K">
+                                                    </div>
+                                                    <div class="yellowtext">Please enter the amount</div>
+                                                    <div class="realityamountBox d-flex align-items-center justify-content-between mt-2">
+                                                        <div>Reality</div>
+                                                        <div class="totalamount fw-bold">
+                                                            <span>150K</span>
+                                                            <span>VND</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <div>Min:<span class="yellowtext">150K</span></div>
+                                                        <div>Max:<span class="yellowtext">150,000K</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="my-3 mt-5 nextbtn">
+                                                    <button class="btn btn-primary">Next</button>
+                                                </div>
+                                            </div>
+                                            <!-- Withdraw-step2 -->
+                                            <div class="withdraw-steptwo">
+                                                <div class="mb-3">
+                                                    <input type="radio" class="btn-check" name="withdrawbank" id="withdrawbank1" autocomplete="off" checked>
+                                                    <label class="btn btn-withdrawbank my-2 d-flex justify-content-between align-items-center" for="withdrawbank1">
+                                                        <div class="bank-info text-start">
+                                                            <span>Bank1</span>
+                                                            <span class="yellowtext fw-bold">1234123412345</span>
+                                                            <span>Name</span>
+                                                        </div>
+                                                        <span class="radio-dot"></span>
+                                                    </label>
+                                                    <input type="radio" class="btn-check" name="withdrawbank" id="withdrawbank2" autocomplete="off">
+                                                    <label class="btn btn-withdrawbank my-2 d-flex justify-content-between align-items-center" for="withdrawbank2">
+                                                        <div class="bank-info text-start">
+                                                            <span>Bank2</span>
+                                                            <span class="yellowtext fw-bold">4567456745678</span>
+                                                            <span>Name</span>
+                                                        </div>
+                                                        <span class="radio-dot"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="text-center">
+                                                    <button class="btn btn-addbank"><img src="./assets/img/icon/plus.png">Add bank</button>
+                                                </div>
+                                                <div class="text-center my-3">
+                                                    <span>To change or delete bank information, please contact customer service.</span>
+                                                </div>
+                                                <div class="text-center">
+                                                    <button class="btn btn-support"><img src="./assets/img/icon/support-icon.png">Support</button>
+                                                </div>
+                                                
+                                                <div class="my-3 mt-5 nextbtn">
+                                                    <button class="btn btn-primary my-1">Withdraw Money</button>
+                                                    <button class="btn btn-primary-border my-1">Back</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="tab-pane fade" id="pagetab-bankmanagement">4Bank Management</div>
                                 
                                 <!-- Transaction -->
@@ -1256,7 +1348,7 @@
                                                     <div class="d-flex align-items-center">
                                                         <img src="./assets/img/icon/wallet.png">
                                                         <div>
-                                                            <span>Total points:</span>
+                                                            <span>Total balance:</span>
                                                             <span class="walletpopup-totalbalance yellowtext">9,876,543,210</span>
                                                         </div>
                                                     </div>
@@ -1889,7 +1981,7 @@
             <div class="walletpopup-titleBox d-flex align-items-center">
                 <img src="./assets/img/icon/wallet.png">
                 <div>
-                    <span>Total points:</span>
+                    <span>Total balance:</span>
                     <span class="walletpopup-totalbalance yellowtext">9,876,543,210</span>
                 </div>
             </div>
@@ -2132,6 +2224,23 @@
                 <button class="btn btn-transferback">Transfer everything to the main account</button>
             </div>
         </div>
+
+        <!-- message -->
+        <div class="message-overlay" style="display: none;">
+            <div class="message-popupBox">
+                <div class="messagepopup-header text-center">Message</div>
+                <div class="messagepopup-content text-center">
+                    <img src="./assets/img/figure/success.png">
+                    <div class="fw-bold fs-3">Success</div>
+                    <div>Full amount transferred successfully.</div>
+                </div>
+                <div class="text-center my-2">
+                    <button class="btn btn-primary px-5">OK</button>
+                </div>
+            </div>
+        </div>
+
+
     </div>
     
 
