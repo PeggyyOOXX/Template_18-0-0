@@ -21,8 +21,8 @@
             <div class="d-flex align-items-center justify-content-end">
                 <!--not login-->
                 <div class="text-end px-0 align-items-center" style="display: none;">
-                    <button class="btn btn-primary">Login</button>
-                    <button class="btn btn-secondary">Register</button>
+                    <a href="/loginregister.html" class="btn btn-primary">Login</a>
+                    <a href="/loginregister.html" class="btn btn-secondary">Register</a>
                 </div>
 
                 <!--login-->
@@ -128,7 +128,7 @@
                             
                             <div class="tab-content">
                                 <!-- Account -->
-                                <div class="tab-pane fade show active" id="pagetab-account">
+                                <div class="membercenter-tabpane tab-pane fade show active" id="pagetab-account">
                                     <div class="d-flex mb-2">
                                         <div class="nav nav-pills left-tabBox" role="tablist">
                                             <button class="nav-link member-tab-option active" data-bs-toggle="pill" data-bs-target="#Account_Personal">Personal</button>
@@ -903,91 +903,149 @@
                                 </div>
 
                                 <!-- Deposit -->
-                                <div class="tab-pane fade" id="pagetab-deposit">
+                                <div class="membercenter-tabpane tab-pane fade" id="pagetab-deposit">
                                     <div class="member-tabcontentBox">
                                         <div class="depositBox py-3">
-                                            <div class="mb-3">
-                                                <div class="deposit-waytitle my-2">Select a provider</div>
-                                                <input type="radio" class="btn-check" name="provider" id="Provider1" autocomplete="off" checked>
-                                                <label class="btn btn-depositway py-2" for="Provider1">
-                                                    <img src="./assets/img/icon/bank.png">
-                                                    <span>Bank Transfer</span>
-                                                </label>
-                                                <input type="radio" class="btn-check" name="provider" id="Provider2" autocomplete="off">
-                                                <label class="btn btn-depositway py-2" for="Provider2">
-                                                    <img src="./assets/img/icon/momo.png">
-                                                    <span>Momo</span>
-                                                </label>
-                                            </div>
-                                            <div class="mb-3">
-                                                <div class="deposit-waytitle my-2">Select payment method</div>
-                                                <input type="radio" class="btn-check" name="paymentmethod" id="PaymentMethod1" autocomplete="off" checked>
-                                                <label class="btn btn-depositway py-2" for="PaymentMethod1">
-                                                    <span>IE PAY</span>
-                                                </label>
-                                                <input type="radio" class="btn-check" name="paymentmethod" id="PaymentMethod2" autocomplete="off">
-                                                <label class="btn btn-depositway py-2" for="PaymentMethod2">
-                                                    <span>VN PAY</span>
-                                                </label>
-                                            </div>
-                                            <div class="mb-3">
-                                                <div class="deposit-waytitle my-2">Select a bank</div>
-                                                <div class="dropdown">
-                                                    <button class="btn btn-depositdropdown dropdown-toggle py-2 d-flex align-items-center justify-content-between" type="button" data-bs-toggle="dropdown">
-                                                        Select a bank
-                                                    </button>
-                                                    <ul class="dropdown-menu selectbank-dropdown">
-                                                        <li><button class="dropdown-item" type="button">
-                                                            <img src="./assets/img/bank/vietin.png">
-                                                            <span>Vietin Bank</span>
-                                                        </button></li>
-                                                        <li><button class="dropdown-item" type="button">
-                                                            <img src="./assets/img/bank/vietcom.png">
-                                                            <span>Vietincom Bank</span>
-                                                        </button></li>
-                                                        <li><button class="dropdown-item" type="button">
-                                                            <img src="./assets/img/bank/msb.png">
-                                                            <span>MSB</span>
-                                                        </button></li>
-                                                        <li><button class="dropdown-item disabled" type="button">
-                                                            <img src="./assets/img/bank/vib.png">
-                                                            <span>VIB Bank</span>
-                                                            <span>(under maintenance)</span>
-                                                        </button></li>
-                                                    </ul>
+                                            <!-- deposit way -->
+                                            <div>
+                                                <div class="mb-3">
+                                                    <div class="input-title my-1">Select a provider</div>
+                                                    <input type="radio" class="btn-check" name="provider" id="Provider1" autocomplete="off" checked>
+                                                    <label class="btn btn-depositway py-2" for="Provider1">
+                                                        <img src="./assets/img/icon/bank.png">
+                                                        <span>Bank Transfer</span>
+                                                    </label>
+                                                    <input type="radio" class="btn-check" name="provider" id="Provider2" autocomplete="off">
+                                                    <label class="btn btn-depositway py-2" for="Provider2">
+                                                        <img src="./assets/img/icon/momo.png">
+                                                        <span>Momo</span>
+                                                    </label>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="input-title my-1">Select payment method</div>
+                                                    <input type="radio" class="btn-check" name="paymentmethod" id="PaymentMethod1" autocomplete="off" checked>
+                                                    <label class="btn btn-depositway py-2" for="PaymentMethod1">
+                                                        <span>IE PAY</span>
+                                                    </label>
+                                                    <input type="radio" class="btn-check" name="paymentmethod" id="PaymentMethod2" autocomplete="off">
+                                                    <label class="btn btn-depositway py-2" for="PaymentMethod2">
+                                                        <span>VN PAY</span>
+                                                    </label>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="input-title my-1">Select a bank</div>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-depositdropdown dropdown-toggle py-2 d-flex align-items-center justify-content-between" type="button" data-bs-toggle="dropdown">
+                                                            Select a bank
+                                                        </button>
+                                                        <ul class="dropdown-menu selectbank-dropdown">
+                                                            <li><button class="dropdown-item" type="button">
+                                                                <img src="./assets/img/bank/vietin.png">
+                                                                <span>Vietin Bank</span>
+                                                            </button></li>
+                                                            <li><button class="dropdown-item" type="button">
+                                                                <img src="./assets/img/bank/vietcom.png">
+                                                                <span>Vietincom Bank</span>
+                                                            </button></li>
+                                                            <li><button class="dropdown-item" type="button">
+                                                                <img src="./assets/img/bank/msb.png">
+                                                                <span>MSB</span>
+                                                            </button></li>
+                                                            <li><button class="dropdown-item disabled" type="button">
+                                                                <img src="./assets/img/bank/vib.png">
+                                                                <span>VIB Bank</span>
+                                                                <span>(under maintenance)</span>
+                                                            </button></li>
+                                                        </ul>
+                                                        </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="input-title my-1">Deposit amount</div>
+                                                    <div class="inputcontent">
+                                                        <input placeholder="đ  150K ~ 150,000K">
                                                     </div>
-                                            </div>
-                                            <div class="mb-3">
-                                                <div class="deposit-waytitle my-2">Deposit amount</div>
-                                                <div class="inputcontent">
-                                                    <input placeholder="đ  150K ~ 150,000K">
-                                                </div>
-                                                <div class="yellowtext">Minimun deposit amount should be 150K</div>
-                                                <div class="d-flex align-items-center justify-content-between gap-1 my-1">
-                                                    <button class="btn btn-depositamount">150K</button>
-                                                    <button class="btn btn-depositamount">300K</button>
-                                                    <button class="btn btn-depositamount">450K</button>
-                                                    <button class="btn btn-depositamount">600K</button>
-                                                    <button class="btn btn-depositamount">750K</button>
-                                                </div>
-                                                <div class="realityamountBox d-flex align-items-center justify-content-between my-2">
-                                                    <div>Reality</div>
-                                                    <div class="totalamount fw-bold">
-                                                        <span>150K</span>
-                                                        <span>VND</span>
+                                                    <div class="yellowtext">Minimun deposit amount should be 150K</div>
+                                                    <div class="d-flex align-items-center justify-content-between gap-1 my-1">
+                                                        <button class="btn btn-depositamount">150K</button>
+                                                        <button class="btn btn-depositamount">300K</button>
+                                                        <button class="btn btn-depositamount">450K</button>
+                                                        <button class="btn btn-depositamount">600K</button>
+                                                        <button class="btn btn-depositamount">750K</button>
+                                                    </div>
+                                                    <div class="realityamountBox d-flex align-items-center justify-content-between my-2">
+                                                        <div>Reality</div>
+                                                        <div class="totalamount fw-bold">
+                                                            <span>150K</span>
+                                                            <span>VND</span>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="my-3 mt-5 nextbtn">
-                                                <button class="btn btn-primary">Next</button>
+                                                <div class="my-3 mt-5 nextbtn">
+                                                    <button class="btn btn-primary">Next</button>
+                                                </div>
                                             </div>
                                             
+                                            <!-- Payment info --->
+                                            <div style="display: none;">
+                                                <div class="paymentqrBox text-center">
+                                                    <div>Payment</div>
+                                                        <div><img src="./assets/img/payment-qr.png"></div>
+                                                    </div>
+                                                    <div class="paymentinfoBox my-20 px-3">
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-6 mt-3">
+                                                                <div class="paymentinfo-title">Bank</div>
+                                                                <div class="yellowtext">XXX Bank</div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6 mt-3">
+                                                                <div class="paymentinfo-title">Account Name</div>
+                                                                <div class="yellowtext">Name Name</div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6 mt-3">
+                                                                <div class="paymentinfo-title">Account Number</div>
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="yellowtext">107884096583</div>
+                                                                    <button class="btn-secondary-border">copy</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6 mt-3">
+                                                                <div class="paymentinfo-title">Deposit Account</div>
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="yellowtext">150,000</div>
+                                                                    <button class="btn-secondary-border">copy</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6 mt-3">
+                                                                <div class="paymentinfo-title">Date</div>
+                                                                <div class="yellowtext">2025-05-13 00:00:00</div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6 mt-3">
+                                                                <div class="paymentinfo-title">Status</div>
+                                                                <div class="yellowtext">In process</div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6 mt-3">
+                                                                <div class="paymentinfo-title">Transfer Note</div>
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="yellowtext">123456789</div>
+                                                                    <button class="btn-secondary-border">copy</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6 mt-3">
+                                                                <div class="paymentinfo-title">Order Note</div>
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="yellowtext">dlsd0ejkn9</div>
+                                                                    <button class="btn-secondary-border">copy</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- Withdraw -->
-                                <div class="tab-pane fade" id="pagetab-withdraw">
+                                <div class="membercenter-tabpane tab-pane fade" id="pagetab-withdraw">
                                     <div class="member-tabcontentBox">
                                         <div class="withdrawBox py-3">
                                             <div class="stepBox">
@@ -1017,7 +1075,7 @@
                                                 </div>
                                                 <hr>
                                                 <div class="mb-3">
-                                                    <div class="withdraw-waytitle my-2">Withdraw amount</div>
+                                                    <div class="input-title my-1">Withdraw amount</div>
                                                     <div class="inputcontent">
                                                         <input placeholder="đ  150K ~ 150,000K">
                                                     </div>
@@ -1079,10 +1137,106 @@
                                     </div>
                                 </div>
 
-                                <div class="tab-pane fade" id="pagetab-bankmanagement">4Bank Management</div>
+                                <!-- Bank Management -->
+                                <div class="membercenter-tabpane tab-pane fade" id="pagetab-bankmanagement">
+                                    <div class="member-tabcontentBox">
+                                        <div class="bankmanagementBox py-3">
+                                            <!-- no bank -->
+                                            <div style="display: none;">
+                                                <div class="bankmanagement-addbankBox align-items-center justify-content-center">
+                                                    <div class="text-center">
+                                                        <button class="btn btn-addbank"><img src="./assets/img/icon/plus.png">Add bank</button>
+                                                    </div>
+                                                    <div class="text-center my-3">
+                                                        <span>No bank information available. Please add a bank to continue.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- add bank -->
+                                            <div style="display: none;">
+                                                <div class="fs-5 fw-bold my-2">Add new bank amount</div>
+                                                <div class="mb-3">
+                                                    <div class="input-title my-1">Amount name</div>
+                                                    <div class="inputcontent">
+                                                        <input placeholder="Real name">
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="input-title my-1">Select a bank</div>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-depositdropdown dropdown-toggle py-2 d-flex align-items-center justify-content-between" type="button" data-bs-toggle="dropdown">
+                                                            Select a bank
+                                                        </button>
+                                                        <ul class="dropdown-menu selectbank-dropdown">
+                                                            <li><button class="dropdown-item" type="button">
+                                                                <img src="./assets/img/bank/vietin.png">
+                                                                <span>Vietin Bank</span>
+                                                            </button></li>
+                                                            <li><button class="dropdown-item" type="button">
+                                                                <img src="./assets/img/bank/vietcom.png">
+                                                                <span>Vietincom Bank</span>
+                                                            </button></li>
+                                                            <li><button class="dropdown-item" type="button">
+                                                                <img src="./assets/img/bank/msb.png">
+                                                                <span>MSB</span>
+                                                            </button></li>
+                                                            <li><button class="dropdown-item disabled" type="button">
+                                                                <img src="./assets/img/bank/vib.png">
+                                                                <span>VIB Bank</span>
+                                                                <span>(under maintenance)</span>
+                                                            </button></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="input-title my-1">Amount number</div>
+                                                    <div class="inputcontent">
+                                                        <input placeholder="Enter amount number">
+                                                    </div>
+                                                </div>
+                                                <div class="my-3 mt-5 nextbtn">
+                                                    <button class="btn btn-primary my-1">Confirm</button>
+                                                    <button class="btn btn-primary-border my-1">Canael</button>
+                                                </div>
+
+                                            </div>
+
+                                            <!-- had bank -->
+                                            <div>
+                                                <div class="mb-4">
+                                                    <div class="btn-withdrawbank my-2 d-flex justify-content-between align-items-center">
+                                                        <div class="bank-info text-start">
+                                                            <span>Bank1</span>
+                                                            <span class="yellowtext fw-bold">1234123412345</span>
+                                                            <span>Name</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn-withdrawbank my-2 d-flex justify-content-between align-items-center">
+                                                        <div class="bank-info text-start">
+                                                            <span>Bank2</span>
+                                                            <span class="yellowtext fw-bold">4567456745678</span>
+                                                            <span>Name</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center">
+                                                    <button class="btn btn-addbank"><img src="./assets/img/icon/plus.png">Add bank</button>
+                                                </div>
+                                                <div class="text-center my-3">
+                                                    <span>To change or delete bank information, please contact customer service.</span>
+                                                </div>
+                                                <div class="text-center">
+                                                    <button class="btn btn-support"><img src="./assets/img/icon/support-icon.png">Support</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
                                 
                                 <!-- Transaction -->
-                                <div class="tab-pane fade" id="pagetab-transaction">
+                                <div class="membercenter-tabpane tab-pane fade" id="pagetab-transaction">
                                     <div class="d-flex mb-2">
                                         <div class="nav nav-pills left-tabBox" role="tablist">
                                             <button class="nav-link member-tab-option active" data-bs-toggle="pill" data-bs-target="#Transaction_Deposit">Deposit</button>
@@ -1340,7 +1494,7 @@
                                 </div>
                                 
                                 <!-- Game Wallet -->
-                                <div class="tab-pane fade" id="pagetab-gamewallet">
+                                <div class="membercenter-tabpane tab-pane fade" id="pagetab-gamewallet">
                                     <div class="member-tabcontentBox">
                                         <div class="row">
                                             <div class="col-12">
@@ -1622,11 +1776,11 @@
                                 </div>
 
                                 <!-- Reset Password -->
-                                <div class="tab-pane fade" id="pagetab-resetpassword">
+                                <div class="membercenter-tabpane tab-pane fade" id="pagetab-resetpassword">
                                     <div class="member-tabcontentBox">
                                         <div class="resetpasswordBox py-3">
                                             <div class="inputBox">
-                                                <span class="inputtitle">Old password</span>
+                                                <span class="input-title my-1">Old password</span>
                                                 <span class="inputrequired yellowtext">*</span>
                                                 <div class="inputcontent">
                                                     <img src="./assets/img/icon/icon-locked.png" class="inputicon">
@@ -1637,7 +1791,7 @@
                                                 <div class="inputwarn" style="display: none;">Warning message</div>
                                             </div>
                                             <div class="inputBox">
-                                                <span class="inputtitle">New password</span>
+                                                <span class="input-title my-1">New password</span>
                                                 <span class="inputrequired yellowtext">*</span>
                                                 <div class="inputcontent">
                                                     <img src="./assets/img/icon/icon-locked.png" class="inputicon">
@@ -1648,7 +1802,7 @@
                                                 <div class="inputwarn" style="display: none;">Warning message</div>
                                             </div>
                                             <div class="inputBox">
-                                                <span class="inputtitle">Confirm new password</span>
+                                                <span class="input-title my-1">Confirm new password</span>
                                                 <span class="inputrequired yellowtext">*</span>
                                                 <div class="inputcontent">
                                                     <img src="./assets/img/icon/icon-locked.png" class="inputicon">
@@ -2257,6 +2411,10 @@
             if (window.innerWidth <= 767) {
                 rowContainer.classList.add('mobile-view-mode');
                 navLinks.forEach(link => link.classList.remove('active'));   // 移除所有active
+
+                document.querySelectorAll('.membercenter-tabpane').forEach(pane => {
+                pane.classList.remove('active', 'show');
+            });
             } else {
                 rowContainer.classList.remove('mobile-view-mode');
                 rowContainer.classList.remove('show-pagetitle');
@@ -2271,8 +2429,6 @@
                     const target = this.getAttribute('data-bs-target');   // 獲取目標標籤
                     document.querySelector('.member-pagetitle').textContent = this.querySelector('span').textContent;   // 更新頁面標題
                     rowContainer.classList.add('show-pagetitle');   // 添加顯示右側內容的類別
-                    navLinks.forEach(l => l.classList.remove('active'));   // 添加active後的內容
-                    this.classList.add('active');
                 }
             });
         });
