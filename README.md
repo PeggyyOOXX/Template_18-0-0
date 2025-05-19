@@ -4,7 +4,7 @@
 /cockfighting.html <br>
 /esports.html <br>
 /fishing.html <br>
-/home.html <br>
+/index.html <br>
 /livecasino.html <br>
 /loginregister.html <br>
 /lottery.html <br>
