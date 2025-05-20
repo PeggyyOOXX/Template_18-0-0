@@ -1913,6 +1913,11 @@ tr:last-child td {
     width: 100%;
     padding: 12px;
 }
+@media screen and (max-width: 767px) {
+    .btn-depositamount{
+        padding: 4px;
+    }
+}
 /* Member Center-withdraw */
 .withdrawBox {
     width: 70%;
